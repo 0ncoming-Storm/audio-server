@@ -43,7 +43,7 @@ if not HF_TOKEN:
 
 
 # PATHS
-LLAMA_SERVER_PATH = "/home/storm/llama.cpp/llama-server"
+LLAMA_SERVER_PATH = "/home/storm/llama.cpp/build/bin/llama-server"
 LLAMA_MODEL_PATH = "models/llama-3.2-3b-instruct-q4_k_m.gguf"
 
 # SERVER SETTINGS
