@@ -5,9 +5,14 @@ import torch
 from fastapi import Query
 import gc
 import httpx
+import os
 from pathlib import Path
 import asyncio
 from whisperx.diarize import DiarizationPipeline
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Temporary monkey-patch to disable PyTorch's weights_only safety check
 # WARNING: This reduces security — only use if you trust the model sources (Hugging Face pyannote models)
@@ -35,7 +40,7 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Safety check
 if not HF_TOKEN:
-    print("WARNING: HF_TOKEN not found in .secrets file. Diarization will fail.")
+    print("WARNING: HF_TOKEN not found. Diarization will fail.")
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"

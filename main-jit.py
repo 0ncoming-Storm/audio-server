@@ -11,6 +11,10 @@ import signal
 import asyncio
 from pathlib import Path
 from whisperx.diarize import DiarizationPipeline
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # --- MONKEY PATCH ---
 _original_load = torch.load
@@ -35,7 +39,7 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Safety check
 if not HF_TOKEN:
-    print("WARNING: HF_TOKEN not found in .secrets file. Diarization will fail.")
+    print("WARNING: HF_TOKEN not found. Diarization will fail.")
 
 
 # PATHS
