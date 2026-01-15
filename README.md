@@ -26,7 +26,7 @@ A high-performance audio processing server that combines WhisperX for accurate t
 ### Software
 - **OS**: Linux (Ubuntu 20.04+ recommended) or Windows with WSL2
 - **CUDA**: 12.x or compatible
-- **Python**: 3.10 or 3.11
+- **Python**: 3.10, 3.11, or 3.12
 - **uv**: Python package manager (installation instructions below)
 
 ## 🚀 Installation
@@ -74,13 +74,13 @@ Speaker diarization requires a Hugging Face token with access to pyannote models
    - https://huggingface.co/pyannote/speaker-diarization-3.1
    - https://huggingface.co/pyannote/segmentation-3.0
 3. Generate an access token at https://huggingface.co/settings/tokens
-4. Create a `.secrets` file or set environment variable:
+4. Set up environment variables:
 
 ```bash
-# Option 1: Create .secrets file (already in .gitignore)
-echo "HF_TOKEN=hf_your_token_here" > .secrets
+# Create a .env file (already in .gitignore)
+echo "HF_TOKEN=hf_your_token_here" > .env
 
-# Option 2: Export environment variable
+# Alternatively, export directly in your shell
 export HF_TOKEN=hf_your_token_here
 ```
 
@@ -218,12 +218,12 @@ If you encounter OOM errors:
 ### HF_TOKEN Not Found Warning
 
 ```
-WARNING: HF_TOKEN not found in .secrets file. Diarization will fail.
+WARNING: HF_TOKEN not found. Diarization will fail.
 ```
 
-**Solution**: Create a `.secrets` file with your Hugging Face token:
+**Solution**: Create a `.env` file with your Hugging Face token:
 ```bash
-echo "HF_TOKEN=hf_your_token_here" > .secrets
+echo "HF_TOKEN=hf_your_token_here" > .env
 ```
 
 Or export the environment variable before running:
