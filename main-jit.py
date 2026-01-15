@@ -14,6 +14,7 @@ from pathlib import Path
 from whisperx.diarize import DiarizationPipeline
 from dotenv import load_dotenv
 
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -128,8 +129,6 @@ Instructions:
 2. **Executive Summary**: A 3-5 sentence overview of the core thesis.
 3. **Core Concepts**: Extract the main topics. Use nested bullet points for details.
 4. **Vocabulary & Definitions**: Identify key terms and define them using context from the lecture.
-5. **Timeline / Key Dates**: If historical or sequential, list dates/steps.
-6. **Quiz Corner**: Generate 3 conceptual questions based on this text.
 
 <transcript>
 {transcript_text}
