@@ -9,6 +9,7 @@ import httpx
 import os
 import signal
 import asyncio
+import threading
 from pathlib import Path
 from whisperx.diarize import DiarizationPipeline
 from dotenv import load_dotenv
@@ -43,7 +44,7 @@ if not HF_TOKEN:
 
 
 # PATHS
-LLAMA_SERVER_PATH = "/home/storm/llama.cpp/build/bin/llama-server"
+LLAMA_SERVER_PATH = "llama.cpp/build/bin/llama-server"
 LLAMA_MODEL_PATH = "models/llama-3.2-3b-instruct-q4_k_m.gguf"
 
 # SERVER SETTINGS
@@ -236,12 +237,9 @@ async def process_audio(
         cleanup_memory()
         print(f"CRITICAL ERROR: {e}")
         raise HTTPException(status_code=500, detail=f"Transcription failed: {str(e)}")
-
-    # --- PHASE 2: SUMMARIZATION ---
     if include_summary:
         try:
             print("4. [LLM] Booting Llama Server (High Context)...")
-
             # Updated Arguments for Performance
             server_cmd = [
                 LLAMA_SERVER_PATH,
@@ -255,37 +253,52 @@ async def process_audio(
                 "99",
                 "--host",
                 "127.0.0.1",
-                "--flash-attn",  # <--- Try to enable Flash Attention (faster/less VRAM)
             ]
-
+            # Launch server with stderr captured for live debugging
             server_process = subprocess.Popen(
-                server_cmd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE
+                server_cmd,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.PIPE,
+                bufsize=1,  # Line-buffered
+                universal_newlines=True,  # Text mode for easy line reading
             )
 
             print(
-                f"   [LLM] Allocating {LLAMA_CTX_SIZE} tokens KV Cache (this takes a moment)..."
+                f" [LLM] Allocating {LLAMA_CTX_SIZE} tokens KV Cache (this takes a moment)..."
             )
+            print(" [LLM] Streaming server logs below for debug:")
+
+            # --- Live streaming of server logs in a background thread ---
+            def stream_llama_logs():
+                """Reads stderr line-by-line and prints with prefix (non-blocking for main thread)."""
+                for line in server_process.stderr:
+                    stripped = line.strip()
+                    if stripped:  # Skip empty lines
+                        print(f"[LLM LOG] {stripped}")
+
+            # Daemon thread so it doesn't block app shutdown
+            threading.Thread(target=stream_llama_logs, daemon=True).start()
+
+            # Wait for server to become ready
             is_ready = await wait_for_server(
                 f"http://localhost:{LLAMA_PORT}", timeout=BOOT_TIMEOUT
             )
-
             if not is_ready:
-                err_out = (
-                    server_process.stderr.read().decode()
-                    if server_process.stderr
-                    else "No logs"
-                )
-                raise TimeoutError(f"Model failed to load. Logs: {err_out}")
+                # On timeout, terminate and collect any remaining logs
+                server_process.terminate()
+                remaining_logs = server_process.stderr.read()
+                if remaining_logs:
+                    print("[LLM ERROR LOGS]\n" + remaining_logs)
+                raise TimeoutError("Model failed to load within timeout.")
 
-            print("   [LLM] Server Ready. Processing...")
+            print(" [LLM] Server Ready. Processing...")
 
             # --- SINGLE CHUNK PREFERENCE ---
             if len(final_transcript) < CHUNK_CHAR_LIMIT:
-                print("   [LLM] Fits in Context. Running Single Pass.")
+                print(" [LLM] Fits in Context. Running Single Pass.")
                 sys_msg, user_msg = get_optimized_prompts(
                     summary_mode, final_transcript
                 )
-
                 messages = [
                     {"role": "system", "content": sys_msg},
                     {"role": "user", "content": user_msg},
@@ -351,7 +364,6 @@ async def process_audio(
         {
             "transcript": final_transcript,
             "summary": final_summary,
-            "language": language or "en",
             "status": "success",
         }
     )
