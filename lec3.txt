@@ -1,0 +1,1088 @@
+[8.4s] SPEAKER_01: So today we're going to carry on with some civilizations from chapter six.
+[13.6s] SPEAKER_01: I'm hoping you've got a lot of practice going on in there.
+[16.1s] SPEAKER_01: The notepads from last week were good.
+[18.9s] SPEAKER_01: You're getting those.
+[20.3s] SPEAKER_01: Most of you are getting them quite well.
+[22.8s] SPEAKER_01: We have been dealing with some relatively simple examples, but the textbook starts off that way and then starts introducing more and more and more and more complexity.
+[32.2s] SPEAKER_01: So you definitely want to do as much practice as you can.
+[34.4s] SPEAKER_01: You want to be able to handle anything that the practice...
+[38.3s] SPEAKER_01: exercise documents thrown at you so when you get to the exam these will just be a piece of cake so we'll do a little bit of that but then we're going to spend the bulk of the class looking at what's called the formal syntax and we're going to get a lot of definitions a lot of concepts so it's going to be kind of conceptually heavy but really really kind of key stuff for us
+[61.6s] SPEAKER_01: Next week, we're going to be moving into first order logic.
+[65.1s] SPEAKER_01: So on Tuesday's class, we're going to be looking at chapter eight, which just introduces us essentially to what's new about logic.
+[73.6s] SPEAKER_01: FOL is just a straightforward extension from TFL, but it introduces a lot of new things and a lot of complexity, but it also introduces a lot more power, a lot of more things we can do with the system.
+[88.2s] SPEAKER_01: So that'll be fun.
+[89.2s] SPEAKER_01: And then on Monday, quiz number two is coming up, and that's going to cover everything that we've done this week.
+[96.0s] SPEAKER_01: Now, I hope you kind of noticed that I don't always get to everything in the textbook.
+[100.3s] SPEAKER_01: Sometimes we don't have time.
+[101.8s] SPEAKER_01: Sometimes I'm focusing on the more complex stuff.
+[104.4s] SPEAKER_01: But, you know, be aware that there could be questions on the quizzes that ask you stuff that we didn't directly cut every class.
+[110.7s] SPEAKER_01: So, yeah, that's all good.
+[112.8s] SPEAKER_01: Okay, so last class.
+[115.9s] SPEAKER_01: When you started doing symbolization exercises, and the main reason, the official reason, was because we want to develop a technique for being able to get to the logical forms of sentences, and pairs of sentences and sets, and ultimately arguments.
+[132.8s] SPEAKER_01: So we can better assess validity, because we've now... Validity is formal validity.
+[140.7s] SPEAKER_01: Validity solely as a matter of form,
+[143.6s] SPEAKER_01: And so that's the motivation.
+[146.9s] SPEAKER_01: And we get this idea that the logical form of a sentence is given by its symbolization into TFL.
+[154.4s] SPEAKER_01: And so that was kind of the main reason we started doing these symbolization exercises.
+[159.2s] SPEAKER_01: There's another reason that by doing this as well, we kind of are slowly and intuitively introduced to a bunch of concepts.
+[168.2s] SPEAKER_01: that we are going to make very precise and rigorous what we did in Chapter 7.
+[173.0s] SPEAKER_01: So we don't have to start everything from scratch there.
+[175.6s] SPEAKER_01: We're absorbing a lot of the stuff as we go along.
+[179.2s] SPEAKER_01: So here's a case where I want to move beyond sentences and I want to symbolize an entire argument.
+[184.9s] SPEAKER_01: So symbolizing an entire argument uses all of the skills that you're developing to symbolize individual sentences.
+[193.7s] SPEAKER_01: And it's also bringing to bear that stuff we did way back in unit one, you know, figuring out what the argument is, putting it into standard form.
+[201.8s] SPEAKER_01: So it's kind of combining all of that kind of stuff.
+[204.9s] SPEAKER_01: For this one, I'm gonna assume you know how to figure out whether it's an argument or not.
+[211.6s] SPEAKER_01: You can figure out what the conclusion is.
+[213.8s] SPEAKER_01: You can write it out in standard form in English.
+[217.9s] SPEAKER_01: And once we've done all of that, then we can do the second step and symbolize the argument into TFL.
+[224.3s] SPEAKER_01: Then we'll be in a much better position to assess it for validity.
+[228.4s] SPEAKER_01: This is actually kind of an interesting argument.
+[231.8s] SPEAKER_01: Plato first runs it about 2,500 years ago.
+[235.5s] SPEAKER_01: So it's a very old argument.
+[237.6s] SPEAKER_01: And philosophers have been talking about it for 2,500 years.
+[241.8s] SPEAKER_01: We're not going to do any philosophy on it.
+[244.7s] SPEAKER_01: We want to get to the logic on it and see how it's actually constructed.
+[249.6s] SPEAKER_01: So the first step is to, in civilization, as always, is to construct the civilization key.
+[257.6s] SPEAKER_01: So we have to pull out all of the atomic sentences and then assign them some sentence letter, some unique sentence letter.
+[265.4s] SPEAKER_01: So what are atomic sentences?
+[266.8s] SPEAKER_01: Well, there's one, death is a benefit.
+[274.7s] SPEAKER_01: And if you're thinking, well, no, you kind of missed the point of symbolizing.
+[283.3s] SPEAKER_01: You still want to be able to symbolize it.
+[285.2s] SPEAKER_01: Still want to get it as far.
+[286.0s] SPEAKER_01: Actually, what Plato's trying to do, you can see why it's the conclusion of his argument.
+[289.2s] SPEAKER_01: He's actually gonna try to convince you that death is a benefit.
+[294.7s] SPEAKER_01: Why?
+[295.5s] SPEAKER_01: Now, because death is either annihilation or a migration of the soul.
+[299.7s] SPEAKER_01: Would that be two sentences?
+[300.8s] SPEAKER_01: That is two sentences.
+[301.6s] SPEAKER_01: That is a compound or a molecular sentence.
+[304.5s] SPEAKER_01: So the first component is death is annihilation.
+[313.4s] SPEAKER_01: The second is death is a migration of the soul.
+[319.3s] SPEAKER_01: Then we have this thing.
+[328.3s] SPEAKER_01: If death is annihilation, then it is like a dreamless sleep.
+[332.8s] SPEAKER_01: That's molecular.
+[334.6s] SPEAKER_01: It contains death as an annihilation as a part, which we already have, and it contains death as like a dreamless sleep.
+[346.7s] SPEAKER_05: Would it be annihilation?
+[348.0s] SPEAKER_05: Is it like a dreamless sleep?
+[350.4s] SPEAKER_01: If it, what is this it referring to?
+[352.8s] SPEAKER_01: This is a case where a use of a pronoun in the convention is English is to look back to the nearest now, and the nearest noun you're getting is death.
+[362.5s] SPEAKER_01: Annihilation, when we get the first order of logic, is a predicate, not a name, but that's beyond what we're worried about right now.
+[369.1s] SPEAKER_01: Death is like a dreamless sleep.
+[372.8s] SPEAKER_01: So, anything else?
+[375.0s] SPEAKER_01: If death is like a dreamless sleep, got that one.
+[377.0s] SPEAKER_01: Then it's a benefit, got that one.
+[378.9s] SPEAKER_01: On the other hand, if death is a migration to soul, got that one.
+[382.7s] SPEAKER_01: Still a benefit, got that one.
+[384.6s] SPEAKER_01: So I think that's it.
+[385.5s] SPEAKER_01: That's all of the atomic components.
+[387.2s] SPEAKER_05: Wouldn't that dreamless sleep as a benefit be another component?
+[392.2s] SPEAKER_01: No, because it's going to be formed with the connective if-then and these two atomic components.
+[401.4s] SPEAKER_01: So I think that's all of our atomic sentences.
+[405.9s] SPEAKER_01: So to complete our symbolization key, we just assign them some sentence letter, anyone you want, as long as it's unique.
+[412.9s] SPEAKER_01: I'm gonna follow the convention of finding some kind of key word in it and using its first letter.
+[420.0s] SPEAKER_01: And now you can kind of see, once you've got more complexity here, a bigger structure, you can kind of see the usefulness of this, right?
+[428.1s] SPEAKER_01: These sentences appear more than once all the way through this.
+[431.0s] SPEAKER_01: So by giving them some easy-to-remember sentence letter, it's going to be easier for us to keep track of this thing.
+[438.2s] SPEAKER_01: So now we've got to symbolize the argument.
+[441.4s] SPEAKER_01: So we have to put it in the standard form.
+[444.5s] SPEAKER_01: The standard form lists the premises one on top of the other, lists the conclusion at the end, and uses some kind of device to clearly indicate or separate the premises from the conclusion.
+[457.7s] SPEAKER_01: I suggest that you always start by trying to identify what the conclusion is.
+[463.1s] SPEAKER_01: And this Y here is a really good premise indicator.
+[466.8s] SPEAKER_01: It's giving you the reasons to believe this.
+[470.1s] SPEAKER_01: So the standard form of this argument should have B at the bottom.
+[474.3s] SPEAKER_01: I'm going to continue to use my favorite, which is the three dots in a triangle.
+[478.0s] SPEAKER_01: You can use a line, whatever your favorite device is.
+[481.5s] SPEAKER_01: And then we want to start putting the premises onto the same.
+[484.3s] SPEAKER_01: So this is what Plato's trying to convince you of.
+[486.3s] SPEAKER_01: Death is actually a pretty good thing.
+[487.7s] SPEAKER_01: Death is a benefit.
+[488.5s] SPEAKER_01: You shouldn't fear it.
+[490.7s] SPEAKER_01: This is ripped out of a much larger context.
+[496.0s] SPEAKER_01: It's in the context of Socrates being condemned to death and he's saying to his friends, it's okay, it's okay.
+[502.2s] SPEAKER_01: I'm happy to accept death in this case.
+[504.8s] SPEAKER_01: And that's a part of the argument.
+[507.8s] SPEAKER_01: So what are the premises?
+[509.5s] SPEAKER_01: Because death is, yes, because that's also a premise indicator.
+[513.6s] SPEAKER_01: So we would pull that out of the premise.
+[516.0s] SPEAKER_01: The premise is death is either annihilation or a migration of the soul.
+[520.6s] SPEAKER_01: So you should recognize that there's that connective there.
+[525.2s] SPEAKER_01: That's almost certainly the disjunction or the or, and we use the bell for that.
+[532.1s] SPEAKER_01: So the first premise is either death is annihilation or it's a migration of the soul.
+[540.1s] SPEAKER_01: Second premise, if death is annihilation, it is like a dreamless sleep.
+[545.2s] SPEAKER_01: So that's one of those if-then statements.
+[547.8s] SPEAKER_01: The comma here is playing the role of the N, but we don't care the specific English words that are used, as long as they're used to express that connective.
+[557.9s] SPEAKER_01: And we recognize the connective in this case is the arrow, the conditional.
+[562.6s] SPEAKER_01: So what's the antecedent?
+[564.7s] SPEAKER_01: Death is annihilation, A.
+[567.2s] SPEAKER_01: Then it is like a dreamless sleep, B.
+[570.3s] SPEAKER_01: So A arrow B.
+[573.2s] SPEAKER_01: Third premise, if death is like a dreamless sleep, then it's a benefit.
+[578.9s] SPEAKER_01: So if D, then B.
+[583.3s] SPEAKER_01: If, on the other hand, that on the other hand is just kind of rhetorical there, it's not really playing any kind of role, so you take it out.
+[591.4s] SPEAKER_01: If death is a migration of the soul, then it's still a benefit.
+[595.1s] SPEAKER_01: So if M, then B.
+[597.6s] SPEAKER_01: And that is the logical form of the argument.
+[601.3s] SPEAKER_01: Now we're in a much better position to ask the question of validity.
+[604.4s] SPEAKER_01: We don't care about soundness so much.
+[606.0s] SPEAKER_01: Philosophers would care about soundness.
+[607.8s] SPEAKER_01: We care about the logic of it.
+[610.1s] SPEAKER_01: What's your intuition?
+[610.9s] SPEAKER_01: Is this a valid or an invalid argument?
+[613.1s] SPEAKER_01: Is the reasoning good from a logical point of view or questionable?
+[615.9s] SPEAKER_01: It feels valid.
+[616.9s] SPEAKER_01: It feels valid?
+[618.8s] SPEAKER_01: Ultimately, we want more than feelings.
+[621.6s] SPEAKER_01: But yeah, it does feel valid.
+[623.6s] SPEAKER_01: And it is, in fact, valid.
+[625.3s] SPEAKER_01: This is a valid bit of reasoning.
+[627.7s] SPEAKER_01: I don't think you should, you know, go home and tell your parents that Mark's telling you that, you know, death is a good thing.
+[632.4s] SPEAKER_01: Just because it's valid doesn't mean it's sound.
+[634.8s] SPEAKER_01: What we would do in the philosophy class is then spend endless, well, 2,500 years in the start of time talking about these premises.
+[641.4s] SPEAKER_05: Soundness hinges on whether a dreamless sleep is a benefit.
+[644.9s] SPEAKER_02: Yeah, so that's a nice one.
+[646.0s] SPEAKER_01: Like the example that we used to do when I do this one in ancient philosophy classes, you know, you have a really, when you've woken up from a really deep sleep, you just feel so refreshed.
+[657.1s] SPEAKER_01: And you didn't dream at all.
+[658.9s] SPEAKER_01: You were just zonked out.
+[660.4s] SPEAKER_01: I was like, those are awesome.
+[661.8s] SPEAKER_01: Those are the kinds of things I want all the time.
+[664.1s] SPEAKER_01: Those are highly beneficial.
+[665.7s] SPEAKER_01: So you can kind of see how you might go about trying to argue for some of these kinds of things.
+[670.8s] SPEAKER_01: Yeah, so that's ultimately what we want to bring ourselves to do is at this level of whole arguments and then we're going to, this is still a really simple one, we're going to then be able to develop better techniques than feels good to actually demonstrate the validity of this thing.
+[686.6s] SPEAKER_01: It's impossible for these premises to be true and that conclusion false.
+[691.8s] SPEAKER_01: This is just an impossible distribution of truth values and we're going to be able to find out why.
+[698.2s] SPEAKER_01: I'm just going to quickly give you this cheat sheet, this list.
+[701.4s] SPEAKER_01: I don't want to spend much time on it.
+[703.2s] SPEAKER_01: So last class we talked about some difficulties with symbolizing.
+[707.4s] SPEAKER_01: I mean, there is a bit of a mismatch between TFL and English.
+[711.5s] SPEAKER_01: TFL has exactly five connectives, no more, no less.
+[714.6s] SPEAKER_01: English has an indefinite number of them.
+[717.9s] SPEAKER_01: Very often we can connect
+[720.7s] SPEAKER_01: a single connective of English with a single connective of TFL, like but, although we looked at those kinds of cases.
+[728.5s] SPEAKER_01: Sometimes we have to do in terms of combinations.
+[731.4s] SPEAKER_01: So we saw how the neither nor of English, we could introduce a sixth connective, but we don't need to, because we can express that connective using a combination of the connectives that we already have.
+[745.3s] SPEAKER_01: So neither A nor B we would symbolize as a negation of the disjunction.
+[750.5s] SPEAKER_01: It's not the case that either A or B.
+[753.1s] SPEAKER_01: And as I mentioned last class, that is equivalent to the conjunction of negations, both not A and not B.
+[759.6s] SPEAKER_01: So we can deal with a lot of unusual or maybe unfamiliar English connectives.
+[765.6s] SPEAKER_01: But sometimes it takes some work, right?
+[767.8s] SPEAKER_01: Sometimes you've got to sit down and think about it.
+[770.1s] SPEAKER_01: So all this is is kind of a handy cheat sheet or rule of thumb kind of thing.
+[775.3s] SPEAKER_01: Yeah?
+[776.1s] SPEAKER_07: I just had a question on the previous slides of the form that you were having.
+[781.6s] SPEAKER_07: This one?
+[782.0s] SPEAKER_07: Could you also just write if A, then B, if B, then B, like all just in one line?
+[788.2s] SPEAKER_01: I don't think you'd be faithful to the way the argument was expressed.
+[791.5s] SPEAKER_01: You might come up with an argument that is equivalent to that one.
+[794.7s] SPEAKER_01: But we need to develop formal techniques for being able to tell when two sentences are equivalent.
+[799.9s] SPEAKER_01: We introduce that concept of necessary equivalence, and you can begin to see why it's going to be important here.
+[806.2s] SPEAKER_01: So maybe if you gave me the case, I'd have to sit down and think about if you did it correctly.
+[812.0s] SPEAKER_01: But I think it would depart from the way it was actually presented.
+[818.3s] SPEAKER_01: The ones I mostly point out here is the unless we talked about that last boss.
+[823.6s] SPEAKER_01: Don't beat yourself up about unlesses.
+[825.5s] SPEAKER_01: They're hard enough.
+[826.7s] SPEAKER_01: Just treat it as a straightforward disjunction.
+[829.6s] SPEAKER_01: I didn't mention the just in case.
+[832.3s] SPEAKER_01: That's kind of an unusual expression that philosophers use all the time.
+[837.0s] SPEAKER_01: It means the very same thing as if and only if.
+[841.1s] SPEAKER_01: That would just come out as a straightforward bi-conditional.
+[848.1s] SPEAKER_01: traction abbreviation I've been using a number of times.
+[851.1s] SPEAKER_01: I probably shouldn't have until today, but that's just another common way of expressing the biconditional, if and no live.
+[858.6s] SPEAKER_01: These ones in particular, these six that involve conditionals,
+[864.3s] SPEAKER_01: are always ones that students get tripped up over.
+[868.2s] SPEAKER_01: And again, I'm not going to spend much time on it.
+[870.1s] SPEAKER_01: I'm just going to leave this to you as a list to go back to if you need to.
+[875.0s] SPEAKER_01: The standard way of expressing a conditional in English is if A, then B.
+[888.8s] SPEAKER_01: The standard way is if, in the farthest left, then coming between the two parts.
+[898.2s] SPEAKER_01: But we often express conditionals in different ways.
+[901.7s] SPEAKER_01: Like if A comma B, that was actually in the last example there, that expresses the very same conditional.
+[908.0s] SPEAKER_01: If I thought they were different, I might symbolize them different, but if I recognize they're the same, then I would symbolize it in the same way, A or B.
+[916.5s] SPEAKER_01: But if-then's getting even weirder.
+[918.7s] SPEAKER_01: Here's another common way of expressing if-then's.
+[921.7s] SPEAKER_01: You stick the if in the middle of the sentence.
+[925.7s] SPEAKER_01: I'll go to the movies if I finish my homework.
+[928.7s] SPEAKER_01: That's a case where we're kind of reversing the order of these things.
+[935.4s] SPEAKER_01: The grammatical order, the grammatical first part, the A, is actually expressing the condition
+[942.6s] SPEAKER_01: come about if the other thing happened.
+[945.9s] SPEAKER_01: So it's playing the role of the logical consequent.
+[948.9s] SPEAKER_01: It needs to be after the arrow in the symbolization.
+[952.7s] SPEAKER_01: And the thing that's grammatically first, the B, is setting up the condition such that the next thing would follow if this happened.
+[961.1s] SPEAKER_01: And so that's playing the role of the logical antecedent.
+[964.3s] SPEAKER_01: So if you see if coming between two atomic sentences,
+[968.7s] SPEAKER_01: It's a conditional, but you gotta remember to reverse the order.
+[971.7s] SPEAKER_01: Otherwise you're gonna get the wrong conditional.
+[973.4s] SPEAKER_01: You're gonna get the wrong logical form.
+[976.3s] SPEAKER_01: But if only is there as well.
+[980.0s] SPEAKER_01: If it's A only if B, curiously the logical order and the grammatical order is exactly the same.
+[988.3s] SPEAKER_01: A only if B says exactly the same thing as if A then B.
+[994.7s] SPEAKER_01: Now, I don't want to spend a lot of time with it.
+[996.2s] SPEAKER_01: Some of you will take a while to figure it out.
+[998.5s] SPEAKER_01: But for sure, it has to be something different than A, if B.
+[1002.1s] SPEAKER_01: Because when you put them together, you get the biconditional.
+[1005.8s] SPEAKER_01: So there has to be a difference in them.
+[1008.6s] SPEAKER_01: And if you think about some actual examples in English, you should come to agree, oh yeah, that is expressed in that one.
+[1015.1s] SPEAKER_01: So in that case, I don't switch the order.
+[1018.0s] SPEAKER_01: And then we have all kinds of other ways of expressing these kinds of conditional sentences, provided that, assuming that, sometimes it's in the middle, sometimes it's on the outside, all over the place.
+[1028.5s] SPEAKER_01: So the point is, you can develop some of these kind of shortcuts, and they're useful sorts of things to keep society when you're doing exercises.
+[1036.7s] SPEAKER_01: But don't get overly mechanical on them.
+[1039.6s] SPEAKER_01: Sometimes they function in different kinds of ways.
+[1042.2s] SPEAKER_01: There really is no substitute for kind of thinking about what the English sentence is actually saying.
+[1048.6s] SPEAKER_01: But these are useful.
+[1050.3s] SPEAKER_01: In fact, you're going to use some of them to do this one.
+[1052.2s] SPEAKER_01: Symbolize this argument for me.
+[1055.3s] SPEAKER_01: I'm so excited to get closer to baseball season.
+[1059.4s] SPEAKER_01: The World Baseball Classic's coming up in a few weeks, isn't it?
+[1272.6s] SPEAKER_00: A few more seconds.
+[1279.2s] SPEAKER_03: I think I have it.
+[1290.5s] SPEAKER_00: If you get really ambitious, you can speculate on whether it's valid or not as well.
+[1297.2s] SPEAKER_01: I don't know if I have a feeling for this.
+[1299.4s] SPEAKER_01: I've been doing logic too long.
+[1300.8s] SPEAKER_01: My intuitions have all been beat out of me.
+[1310.4s] SPEAKER_01: All right, so last thing I'm gonna mention about civilizations and then we'll move to the formal syntax is all we, not all we have, but we've got a lot of examples or rules of thought when we're getting practice, but there are some times where we just kind of get stuck.
+[1327.6s] SPEAKER_01: Those little cheat sheets don't help.
+[1329.3s] SPEAKER_01: We're not entirely sure what to do.
+[1330.9s] SPEAKER_01: We've got unfamiliar connectives in English.
+[1334.0s] SPEAKER_01: Well, all you gotta do is roll up your sleeves and sit down and think about it.
+[1338.9s] SPEAKER_01: And for this,
+[1344.0s] SPEAKER_01: remember the two sentences are necessarily equivalent if and only if there was no case in which they have different truth values so what we're trying to do is when we symbolize the sentence in truth function logic it's going to mean exactly the same thing as the original English sentence did so they're going to be equivalent so you got to think about under what can
+[1368.7s] SPEAKER_01: what conditions would I be prepared to think this sentence is false?
+[1372.1s] SPEAKER_01: And then you want your symbolized sentence to be true or false under exactly the same conditions.
+[1377.5s] SPEAKER_01: And that's not always easy to do.
+[1379.1s] SPEAKER_01: So in this case, in these examples, we have two atomic sentences.
+[1382.4s] SPEAKER_01: Germany will win a gold medal.
+[1389.5s] SPEAKER_01: And Denmark will win a gold medal.
+[1396.9s] SPEAKER_01: So G and D respectively.
+[1399.4s] SPEAKER_01: So exactly one.
+[1400.4s] SPEAKER_01: I haven't seen that before.
+[1403.8s] SPEAKER_01: I see an or.
+[1406.0s] SPEAKER_01: So maybe there's an or, maybe there's a disjunction involved here.
+[1408.4s] SPEAKER_01: I think there probably is.
+[1411.6s] SPEAKER_01: Well, let's see.
+[1414.8s] SPEAKER_01: Maybe it's this.
+[1415.7s] SPEAKER_01: Just simply either Germany or Denmark will learn gold medal.
+[1422.9s] SPEAKER_04: Do you think two sentences is involved in logic to describe this?
+[1426.9s] SPEAKER_01: We're going to do it in one sentence, because it's one English sentence.
+[1433.2s] SPEAKER_01: Why doesn't this do it, though, first of all?
+[1435.0s] SPEAKER_07: Because it has to be an exclusive value.
+[1437.8s] SPEAKER_01: Yeah, and this is an inclusive value.
+[1439.4s] SPEAKER_01: It's always inclusive.
+[1440.8s] SPEAKER_01: So this allows for the possibility that both win.
+[1444.3s] SPEAKER_01: And that is ruled out by that thing.
+[1447.6s] SPEAKER_05: So you've got to capture those other conditions.
+[1450.0s] SPEAKER_05: Can you use if and only if and not to do it?
+[1452.7s] SPEAKER_05: How?
+[1453.9s] SPEAKER_05: G if and only if not D and D if and only if not G. I think that would probably do it.
+[1462.3s] SPEAKER_01: You said and, so you would put them together with a conjunction.
+[1465.7s] SPEAKER_01: And then what do you do with this thing?
+[1468.8s] SPEAKER_01: Because this might be consistent with either of them doing it.
+[1472.2s] SPEAKER_01: which would be inconsistent with what the first thing says, maybe.
+[1475.9s] SPEAKER_01: You can play around with that.
+[1476.9s] SPEAKER_01: And I'd have to go back and do some truth tables to see if it actually comes out to be the case.
+[1480.4s] SPEAKER_01: But I think you're definitely on to something.
+[1482.3s] SPEAKER_01: From the information that this conveys, what if it turned out that Germany won a gold medal?
+[1488.5s] SPEAKER_01: What could you immediately conclude from that?
+[1490.4s] SPEAKER_01: Denmark didn't.
+[1491.5s] SPEAKER_01: Denmark didn't.
+[1492.2s] SPEAKER_01: So Germany wins a gold medal, and Denmark does not win a gold medal.
+[1496.2s] SPEAKER_01: But you don't know that Germany won.
+[1498.9s] SPEAKER_01: What if Denmark won?
+[1500.5s] SPEAKER_01: Germany didn't.
+[1501.8s] SPEAKER_01: Then Germany didn't.
+[1504.3s] SPEAKER_01: So now we've got three sentences here, but we've got to put them together in some kind of way.
+[1509.7s] SPEAKER_01: So here's what we can do.
+[1510.9s] SPEAKER_01: Either Germany or Denmark will win a gold medal.
+[1514.2s] SPEAKER_01: And if Germany wins, then Denmark won't.
+[1518.3s] SPEAKER_01: And if Denmark wins, then Germany won't.
+[1524.2s] SPEAKER_01: And I think that will do it.
+[1525.8s] SPEAKER_01: That's a pretty long and complex sentence, but I think it does capture all the information that is expressed in the original English sentence.
+[1533.8s] SPEAKER_01: And notice we put it together just by using our familiar five connectives to do that.
+[1538.4s] SPEAKER_01: But you pointed out that it's actually expressing an exclusive or.
+[1542.8s] SPEAKER_01: Is there an easier way to capture the exclusive or?
+[1548.1s] SPEAKER_01: Either one or the other, and not both.
+[1554.9s] SPEAKER_01: And that does it.
+[1556.0s] SPEAKER_01: That's the simplest, most straightforward way of expressing an exclusive or.
+[1561.0s] SPEAKER_01: And so we get something that's simpler than this thing, but it's not actually simpler from a logical point of view.
+[1569.4s] SPEAKER_01: They both have exactly the same meaning, exactly the same tree conditions.
+[1573.5s] SPEAKER_01: It's simpler from a human point of view, and it would take less time on an exam to do that, but if you didn't immediately recognize that at the beginning, you might end up with this, you might end up with this.
+[1584.1s] SPEAKER_01: And I've got to do some thinking about
+[1587.3s] SPEAKER_01: It's not obvious to me that it does.
+[1589.1s] SPEAKER_01: But sometimes that's what you gotta do.
+[1590.6s] SPEAKER_01: You gotta kind of just walk your sleeves, do your best.
+[1593.2s] SPEAKER_01: And this can take some time.
+[1595.1s] SPEAKER_01: What about at most one of Germany or Denmark will win a gold medal?
+[1600.2s] SPEAKER_01: There's another at most one.
+[1604.0s] SPEAKER_01: But what does at most one mean?
+[1606.9s] SPEAKER_01: It means either none or exactly one.
+[1612.9s] SPEAKER_01: We're only doing the two things.
+[1614.9s] SPEAKER_01: We already know how to do exactly one.
+[1617.3s] SPEAKER_01: Now we just have to do none.
+[1620.6s] SPEAKER_01: Neither of them win.
+[1622.9s] SPEAKER_01: The easiest way to do that is it's not the case that either Germany or Denmark win a gold medal.
+[1632.9s] SPEAKER_00: Or exactly one does, which we already symbolized above.
+[1639.3s] SPEAKER_00: There's our symbolization.
+[1645.8s] SPEAKER_01: Cool, eh?
+[1646.7s] SPEAKER_01: There's actually really something.
+[1648.5s] SPEAKER_01: Just something that blows me away every time it is.
+[1650.5s] SPEAKER_01: We get really complacent.
+[1651.6s] SPEAKER_01: We take our own language for granted.
+[1654.3s] SPEAKER_01: And look at how much complexity, from a logical point of view, we build in just with a handful of words.
+[1660.6s] SPEAKER_01: But you can also see why we're so bad at racing sometimes with these kinds of things.
+[1664.2s] SPEAKER_01: We just draw wrong inferences because we get confused about what it's actually expressing.
+[1668.2s] SPEAKER_01: Once we get this thing, I mean, it's long and it's complicated.
+[1670.6s] SPEAKER_01: We still haven't worked out all of the parts that they fit together.
+[1681.7s] SPEAKER_01: things quite easily.
+[1683.6s] SPEAKER_01: So there's a lot of advantages.
+[1685.1s] SPEAKER_01: We're going to see an exponential increase in this kind of thing when we get to first order logic next week.
+[1692.4s] SPEAKER_01: All right, so that's pretty much it with symbolization for the classroom perspective.
+[1696.2s] SPEAKER_01: You do need to get as much practice as you can on this.
+[1698.6s] SPEAKER_01: For some, a little bit of practice will be enough if you're doing the more complicated ones.
+[1703.4s] SPEAKER_01: For some people, this kind of stuff comes really easily and intuitively.
+[1706.6s] SPEAKER_01: It didn't for me.
+[1707.3s] SPEAKER_01: I had to spend a lot of time working on lots of different examples over lots of different years.
+[1711.9s] SPEAKER_01: You gotta get to the point where you're not gonna waste a lot of time on the exam, because you're definitely gonna be asked to do some symbolizations on the exams for me.
+[1720.6s] SPEAKER_01: Last thing in the language part of TFL is what we call the formal syntax.
+[1727.4s] SPEAKER_01: And this is a list of concepts that are purely syntactic concepts, so they involve only the structure of sentences, the parts that make them up and how they are put together.
+[1739.6s] SPEAKER_01: And the primary goal, it's not going to be the only thing that we get out of this, but the primary goal is we want to define rigorously this concept, the concept of being a sentence of truth functional logic.
+[1751.8s] SPEAKER_01: Now think about a counterpart to that question in, say, an English class, high school English, middle, and even in university level English.
+[1759.2s] SPEAKER_01: Suppose we wanted to define what it is to be a sentence of English.
+[1762.7s] SPEAKER_01: That's not an easy task.
+[1764.7s] SPEAKER_01: That's a monumentally difficult task.
+[1767.2s] SPEAKER_01: Not all grammarians agree about this.
+[1770.8s] SPEAKER_01: Some purists refuse to allow any foreign words into, you know, that's clear in other kinds of languages, like Quebec French tries to forbid any anglicization of words creeping into the language.
+[1781.7s] SPEAKER_01: So that would be an immensely difficult task.
+[1784.5s] SPEAKER_01: You would also have to specify the grammar and how the punctuations work, whether it is a colon or a semicolon, all that kind of stuff.
+[1793.2s] SPEAKER_01: That would be an immensely difficult task to do.
+[1796.2s] SPEAKER_01: You could spend your entire career doing that and still not produce something that everybody agrees with.
+[1801.3s] SPEAKER_01: But we are going to be able to define this counterpart concept, a sentence of truth-functional logic, in really, really short order.
+[1808.2s] SPEAKER_01: And that kind of also shows the power of these formal systems.
+[1815.3s] SPEAKER_01: We all need to specify what we call the vocabulary.
+[1818.7s] SPEAKER_01: So the vocabulary is a list of all of the terms that are recognized as within the language.
+[1824.2s] SPEAKER_01: Again, I'm trying to do that in English.
+[1826.5s] SPEAKER_01: I'll give you 10 minutes, write down the vocabulary of English.
+[1830.3s] SPEAKER_01: It's an impossible task.
+[1831.9s] SPEAKER_01: There's like 650,000 words on last count.
+[1834.9s] SPEAKER_01: New ones are constantly coming in.
+[1836.6s] SPEAKER_01: All ones are checked out.
+[1838.5s] SPEAKER_01: It's always in turmoil.
+[1842.0s] SPEAKER_01: Formal languages like TFL have a fixed vocabulary.
+[1845.4s] SPEAKER_01: It's got an infinite number of things in it, but we can tame it, we can make it manageable.
+[1850.7s] SPEAKER_01: The second thing we're gonna need to do is specify the grammar.
+[1853.7s] SPEAKER_01: And these are the grammatical rules or the rules that tell us how and only how we can manipulate the vocabulary to produce sentences.
+[1863.8s] SPEAKER_01: So two parts in the definition of what a sentence is.
+[1867.3s] SPEAKER_01: Here's the first, oh no, before we get to the first part, I gotta introduce the distinction, well I gotta introduce the sentential meta variables at this point.
+[1877.3s] SPEAKER_01: This gets a lot more discussion near the end of the chapter, when it talks about the difference between use and mention, and it talks about the difference between sentences and sentential forms.
+[1889.5s] SPEAKER_01: Earlier, we said things like we can represent maybe the logical form of an argument like this, all A's are B's, all B's are C's, therefore all A's are C's.
+[1901.3s] SPEAKER_01: We did call these A's and B's in that time, we did call them variables.
+[1907.6s] SPEAKER_01: We can say we'll just let them represent just the structure of this thing without being any particular kind of thing.
+[1915.3s] SPEAKER_01: But now we formally introduced capital letters in
+[1920.1s] SPEAKER_01: limited way, these are sentence letters.
+[1925.5s] SPEAKER_01: These are used to represent the logical form of atomic sentences of English in a symbolization key.
+[1934.3s] SPEAKER_01: Turns out they are not variables at all in that context.
+[1938.6s] SPEAKER_01: Something is a variable if it can represent a number of different things.
+[1944.3s] SPEAKER_01: The capital letter A within each symbolization key cannot.
+[1949.1s] SPEAKER_01: It can only represent the atomic English sentence that it's assigned to.
+[1954.5s] SPEAKER_01: There could be a different symbolization key in which the capital letter A represents something else, but still that doesn't make it a variable.
+[1960.9s] SPEAKER_01: It would make it a constant.
+[1962.5s] SPEAKER_01: It would be a constant.
+[1963.4s] SPEAKER_01: These are actually logical constants.
+[1968.2s] SPEAKER_01: Yeah.
+[1968.6s] SPEAKER_01: So they're not variables.
+[1970.6s] SPEAKER_01: When I'm talking about A, if I'm using truth functional logic, then I can do things like this.
+[1978.5s] SPEAKER_01: That's a conjunction between A and B.
+[1980.8s] SPEAKER_01: And A and B is not a variable.
+[1982.1s] SPEAKER_01: But sometimes I want to talk about, hey, you know, think about that sentence and think about this sentence.
+[1990.2s] SPEAKER_01: They have something in common, right?
+[1992.3s] SPEAKER_01: There's something very similar from a logical point.
+[1995.9s] SPEAKER_01: They're both conjunctions.
+[1997.8s] SPEAKER_01: They both put the care in between two sentences.
+[2000.8s] SPEAKER_01: And I can talk at the same time about both of them by introducing a real variable to represent the sentences.
+[2008.5s] SPEAKER_01: And that's what these things are.
+[2010.4s] SPEAKER_01: The sentential meta variables are pure variables.
+[2014.7s] SPEAKER_01: So they're not in the language.
+[2017.9s] SPEAKER_01: They're not in TFL.
+[2021.0s] SPEAKER_01: They're in the language we use to talk about TFL, which for us is English.
+[2026.3s] SPEAKER_01: We're using English to talk about how truth functional logic works.
+[2031.7s] SPEAKER_01: And these are pure sentential meta variables.
+[2036.3s] SPEAKER_01: They're called meta variables because they're in the meta language.
+[2041.4s] SPEAKER_01: We mention them, we don't use them.
+[2044.2s] SPEAKER_01: And they're variables because they can represent a whole range of things.
+[2047.7s] SPEAKER_01: But by calling them sentential metavariables, we are limiting what they can represent to just sentences.
+[2055.5s] SPEAKER_01: Sentential just means to deal with sentences.
+[2058.2s] SPEAKER_01: We're going to see a whole bunch of metavariables this term.
+[2060.9s] SPEAKER_01: Some of them are sentential metavariables, but some are not.
+[2063.7s] SPEAKER_01: We're actually even going to see metavariables that range over variables, but that's way down the road a little bit.
+[2070.5s] SPEAKER_01: And what's a sentence of TFL?
+[2072.9s] SPEAKER_01: Well, we haven't quite defined yet, but that's what we're working on right now.
+[2076.0s] SPEAKER_01: So we'll get to the end.
+[2078.3s] SPEAKER_01: Now, so we need some symbol, some way of representing these variables, pure variables that can stand for any sentence of TFL.
+[2085.9s] SPEAKER_01: And the textbook uses these kind of highly scripted, weird-looking fonts for this.
+[2093.6s] SPEAKER_01: So that weird stylized A, weird stylized B, weird stylized D. So it uses capital letters, except they have to be scripted.
+[2104.9s] SPEAKER_01: They have to look different.
+[2106.5s] SPEAKER_01: So we never want to confuse this thing with a sentence letter.
+[2112.3s] SPEAKER_01: So they have to be some way of marking them off.
+[2114.9s] SPEAKER_01: That's how the textbook does it.
+[2116.3s] SPEAKER_01: That works fine digitally.
+[2120.0s] SPEAKER_01: It doesn't work very fine when I'm writing things out, because it's hard for me to do that.
+[2123.8s] SPEAKER_01: So the convention I'm going to use is I'm going to try to make it look weird and scripted, but I'm also going to put a little underline on it.
+[2130.1s] SPEAKER_01: So that's going to tell you this is a meta variable, a syntax meta variable, not a sentence letter.
+[2134.6s] SPEAKER_01: A sentence letter will look like that.
+[2136.3s] SPEAKER_01: You'll see on D2L, their quiz function has very limited fonts and that allows.
+[2141.8s] SPEAKER_01: It doesn't allow you to mix together fonts.
+[2144.2s] SPEAKER_01: So I'm going to use this device as well.
+[2146.1s] SPEAKER_01: I'm going to use an italicized capital letter and then I'm going to underline it.
+[2149.4s] SPEAKER_01: And I'll make that explicit in the quiz.
+[2151.3s] SPEAKER_01: There are going to be meta variables, not sentence letters.
+[2154.4s] SPEAKER_01: And then we get the definition of the vocabulary.
+[2157.2s] SPEAKER_01: We're not going to use it until we get the definition of the grammar yet, but keep that in mind.
+[2160.9s] SPEAKER_01: We'll come back to it.
+[2162.2s] SPEAKER_01: So here's the complete vocabulary.
+[2164.4s] SPEAKER_01: We can't actually list
+[2166.0s] SPEAKER_01: every item of the vocabulary, because there's an infinite number of them.
+[2172.3s] SPEAKER_01: But we can do it in terms of this kind of list.
+[2174.8s] SPEAKER_01: These are the types of symbols in the language.
+[2181.3s] SPEAKER_01: Some of the types of symbols have finite examples, but one of them has an infinite number of examples.
+[2189.6s] SPEAKER_01: So here's the first category.
+[2190.8s] SPEAKER_01: There are the atomic sentences.
+[2194.4s] SPEAKER_01: and here's how they're represented.
+[2196.3s] SPEAKER_01: Here's the symbol that represents them and these are just sentence letters which we defined as capital letters with or without numeric subscripts, not the weird scripted ones, just the normal ones.
+[2210.1s] SPEAKER_01: There's an infinite number of those but they're all kind of alike.
+[2215.1s] SPEAKER_01: We know how they function.
+[2217.3s] SPEAKER_01: We know that these two are different.
+[2221.4s] SPEAKER_01: And what can they do?
+[2222.8s] SPEAKER_01: They can represent an atomic sentence of English in the symbolization key.
+[2228.3s] SPEAKER_01: And that's really all.
+[2230.6s] SPEAKER_01: Second category are the connectives.
+[2233.4s] SPEAKER_01: There are exactly five.
+[2235.5s] SPEAKER_01: And there they are.
+[2237.0s] SPEAKER_01: One unary connective, the negation, and four binary connectives.
+[2240.9s] SPEAKER_01: The caret, the vel, the arrow, and the dumb arrow.
+[2243.1s] SPEAKER_01: Now at this point, this is pure syntax.
+[2244.4s] SPEAKER_01: We're not interpreting these things.
+[2245.9s] SPEAKER_01: We're not giving them a meaning.
+[2246.9s] SPEAKER_01: These are just symbols.
+[2248.4s] SPEAKER_01: These are just structures of lines on a page.
+[2251.6s] SPEAKER_01: A computer or machine could recognize them as different symbols without having any concern for what they're supposed to represent.
+[2258.3s] SPEAKER_01: Representing is a semantic concept.
+[2260.2s] SPEAKER_01: We're here on syntax.
+[2262.2s] SPEAKER_01: And finally, punctuation marks.
+[2263.9s] SPEAKER_01: There's exactly two in TFL.
+[2267.6s] SPEAKER_01: There's the opening bracket and a closing bracket.
+[2270.6s] SPEAKER_01: And I put them in the opposite order here.
+[2272.4s] SPEAKER_01: They're separate symbols, but there's only two of them.
+[2279.1s] SPEAKER_01: We know in practice they always come grouped in pairs, and it's always the opening one that comes before the closing one, and that will carry on in TFL as well.
+[2290.2s] SPEAKER_01: Okay, so we're going to next define an expression of truth-function logic, and there it is.
+[2297.8s] SPEAKER_01: An expression of truth-function logic is any string of symbols of truth-function logic.
+[2304.5s] SPEAKER_01: Any string of symbols taken from this list constitutes an expression.
+[2310.7s] SPEAKER_01: So is this an expression?
+[2322.1s] SPEAKER_01: Yes.
+[2330.1s] SPEAKER_01: That's a sentence letter.
+[2333.0s] SPEAKER_01: That's a connective.
+[2334.4s] SPEAKER_01: That's a sentence letter.
+[2335.4s] SPEAKER_01: That's it.
+[2336.9s] SPEAKER_01: That's a connective.
+[2337.7s] SPEAKER_01: That's it.
+[2338.4s] SPEAKER_01: That's a connective.
+[2339.1s] SPEAKER_01: That's it.
+[2339.5s] SPEAKER_01: That's a connective.
+[2340.2s] SPEAKER_01: That's it.
+[2340.7s] SPEAKER_01: That's a connective.
+[2341.4s] SPEAKER_01: That's it.
+[2342.2s] SPEAKER_01: That's a connective.
+[2343.1s] SPEAKER_01: That's it.
+[2343.8s] SPEAKER_01: That's it.
+[2345.5s] SPEAKER_01: That's a connective.
+[2346.9s] SPEAKER_01: That's it.
+[2347.3s] SPEAKER_01: So yeah, it's an expression.
+[2349.2s] SPEAKER_01: Is it a sentence?
+[2350.3s] SPEAKER_01: Well, that's it.
+[2351.3s] SPEAKER_01: We haven't got a sentence yet.
+[2352.6s] SPEAKER_02: Not grammatically correct, but...
+[2354.7s] SPEAKER_02: Sorry?
+[2355.3s] SPEAKER_02: It's not grammatically correct.
+[2356.8s] SPEAKER_01: Well, we haven't got the grammar.
+[2357.9s] SPEAKER_01: Who knows?
+[2358.3s] SPEAKER_01: Maybe the grammar will be defined in such a way that it will come out fine.
+[2360.9s] SPEAKER_01: I don't know.
+[2365.5s] SPEAKER_01: Is that an expression?
+[2367.4s] SPEAKER_05: No.
+[2368.0s] SPEAKER_01: No.
+[2368.6s] SPEAKER_01: Why not?
+[2370.3s] SPEAKER_01: That is not a symbol in our vocabulary.
+[2373.2s] SPEAKER_01: It's not in that list.
+[2376.3s] SPEAKER_01: Why do we need this concept?
+[2377.7s] SPEAKER_01: Because we're going to define a sentence as a certain kind of expression.
+[2381.9s] SPEAKER_01: All sentences are expressions.
+[2384.3s] SPEAKER_01: So that's gonna tell us that if you've got a string of symbols that contains anything that's outside of this list, immediately it cannot be a sentence of the language.
+[2393.4s] SPEAKER_01: That's a minimal condition, is it has to be an expression.
+[2397.0s] SPEAKER_01: But it has to have more than that.
+[2399.1s] SPEAKER_01: And there's the definition.
+[2401.8s] SPEAKER_01: This is a curious kind of definition.
+[2403.1s] SPEAKER_01: I don't think we've seen one just like it before, but it's going to be a very common type of definition we're going to see over and over and over again in logic.
+[2412.3s] SPEAKER_01: It's called a recursive definition.
+[2413.8s] SPEAKER_01: It's called a definition in terms of cases, clauses, and you get the idea that the clauses can intermingle with each other all over the place.
+[2422.9s] SPEAKER_01: This one also has what's called a closure clause.
+[2425.3s] SPEAKER_01: clause.
+[2426.4s] SPEAKER_01: And we'll see the importance of that when we get to the end here.
+[2429.3s] SPEAKER_01: So here's the definition.
+[2430.9s] SPEAKER_01: And notice that it's now, for the first time, using these sentential metavariables.
+[2437.9s] SPEAKER_01: So that thing in there says, if you've got a sentence, and a sentence is what's defined by this grammar, then other conditions will follow.
+[2450.2s] SPEAKER_01: First clause.
+[2452.5s] SPEAKER_01: All sentence letters are sentences of truth, function, function.
+[2456.9s] SPEAKER_01: So is that a sentence?
+[2458.8s] SPEAKER_01: Yes.
+[2459.9s] SPEAKER_01: It's a sentence letter and all sentence letters are sentences.
+[2464.6s] SPEAKER_01: Well, first of all, is it an expression?
+[2465.9s] SPEAKER_01: Yes.
+[2466.5s] SPEAKER_01: It's in the vocabulary.
+[2467.8s] SPEAKER_01: So then it counts.
+[2469.7s] SPEAKER_01: So there's an infinite number of sentences in our language.
+[2473.8s] SPEAKER_01: These are also examples of what we would call, like we call them devices we use to represent the logical form of atomic sentences of English.
+[2482.6s] SPEAKER_01: And we're going to carry that term into here.
+[2484.9s] SPEAKER_01: We're going to call any sentence like that an atomic sentence of truth functional logic.
+[2491.1s] SPEAKER_01: So just like in English, an atomic sentence does not contain any connectives.
+[2496.3s] SPEAKER_01: It only has that part.
+[2498.7s] SPEAKER_01: The clauses two through six define the molecular or the compound or the complex sentences of the language.
+[2507.6s] SPEAKER_01: Clause two defines the negations.
+[2511.0s] SPEAKER_01: It says if script A is a sentence of truth function logic,
+[2516.1s] SPEAKER_01: So if you start off with a sentence and all you do to that thing is you append that negation symbol to the left of it, then it's still a sentence.
+[2527.1s] SPEAKER_01: So we know that A is a sentence by Clause 1.
+[2529.9s] SPEAKER_01: All sentence letters are sentences.
+[2531.8s] SPEAKER_01: And if all I do to A is I stick the negation to the left of it, it's still a sentence.
+[2536.8s] SPEAKER_01: And that's what we're going to call a negation.
+[2538.5s] SPEAKER_01: That's the kind of sentence that it is.
+[2542.2s] SPEAKER_01: Is this a sentence?
+[2544.2s] SPEAKER_01: Yes.
+[2544.8s] SPEAKER_01: Yeah.
+[2545.5s] SPEAKER_01: By clause one, that's a sentence.
+[2548.3s] SPEAKER_01: All I do to a sentence is I stick the tilde to the left of it.
+[2551.6s] SPEAKER_01: That's clause two.
+[2553.5s] SPEAKER_01: That's a sentence.
+[2554.7s] SPEAKER_01: And I can use these clauses however many times I want to or need to.
+[2559.8s] SPEAKER_01: And so this is another application of clause two.
+[2563.0s] SPEAKER_01: All I do to a sentence is stick the tilde to the left of it.
+[2565.9s] SPEAKER_01: So that's a perfectly good sentence.
+[2569.3s] SPEAKER_01: Is this a sentence?
+[2572.9s] SPEAKER_01: Yeah, by clause one, that's a sentence.
+[2575.5s] SPEAKER_01: It's a sentence letter, and all sentence letters are sentences.
+[2579.0s] SPEAKER_01: And by clause two, that's a sentence.
+[2581.9s] SPEAKER_01: All you do to a sentence is stick a tilde to the left of it, and it's still a sentence.
+[2586.5s] SPEAKER_01: So we can begin to see how we can conclusively show that something is a sentence by being able to actually explicitly point to the right clauses of the definition that make it the case.
+[2599.4s] SPEAKER_01: And we can also see how we do this by building from the simple up to the complex.
+[2611.6s] SPEAKER_01: Really good question.
+[2613.2s] SPEAKER_01: Short answer?
+[2616.1s] SPEAKER_01: what the definition gives us right whatever definitions we don't contest them we just have to take them for granted there is a reason for it but it's going to take a little bit of time to come out it's because we get potential ambiguity with binary connectives that we do not get with the unary connective and these brackets are going to be used to get rid of the ambiguity but the short answer which is really the right answer now is
+[2645.7s] SPEAKER_01: any choice on that.
+[2647.8s] SPEAKER_01: Second clause is the one governing, so clauses 3, 4, 5, and 6 are the ones that govern the binary connectives.
+[2654.3s] SPEAKER_01: And 3 is the one governing the conjunctions.
+[2657.1s] SPEAKER_01: It says if A and B are both sentences, then so is the result of sticking the carrot between them.
+[2665.4s] SPEAKER_01: So this tells you how to use the carrot, comes between, but we've been doing that anyway.
+[2670.1s] SPEAKER_01: But you also have to close the whole thing here.
+[2675.4s] SPEAKER_01: So when you're introducing the caret, you're also introducing brackets.
+[2680.2s] SPEAKER_01: But notice you do not introduce brackets when you use the negation.
+[2686.4s] SPEAKER_01: Negation attaches itself to a single sentence, doesn't need the brackets.
+[2692.6s] SPEAKER_01: So is this a sentence?
+[2699.4s] SPEAKER_01: G carat tilde T. Yeah, and we should be able to show it.
+[2703.6s] SPEAKER_01: That's a sentence letter, so by clause one, it's a sentence.
+[2706.7s] SPEAKER_01: That's a sentence letter, so by clause one, it's a sentence.
+[2709.7s] SPEAKER_01: All we've done to this sentence is stick a negation in front of it.
+[2712.9s] SPEAKER_01: So by clause two, that's a sentence.
+[2715.2s] SPEAKER_01: All we've done to this sentence and this sentence is stick the care in between them, encase the whole thing in brackets.
+[2723.5s] SPEAKER_01: So by clause three, that's a sentence.
+[2726.0s] SPEAKER_04: Yeah?
+[2726.6s] SPEAKER_04: Test, do we ever have to memorize the order of these clauses?
+[2729.7s] SPEAKER_01: Well, no, I don't care about the order.
+[2730.9s] SPEAKER_01: I don't even care about the numbers of them.
+[2732.5s] SPEAKER_01: But I'm just using them here.
+[2735.3s] SPEAKER_01: If I give it to you, you can look at it and tell me what the number is.
+[2738.8s] SPEAKER_01: Yeah.
+[2741.7s] SPEAKER_01: Three, four, or four, five, and six go pretty quick.
+[2745.0s] SPEAKER_01: disjunctions.
+[2746.3s] SPEAKER_01: If A and B are both sentences, then so is the result of putting the bell between them and encasing the whole thing in parentheses.
+[2754.7s] SPEAKER_01: If A and B are both sentences, then so is the result of sticking the arrow between them and encasing the whole thing in parentheses.
+[2762.9s] SPEAKER_01: If A and B are both sentences, then so is the result of putting the double arrow between them and encasing the whole thing in parentheses.
+[2770.9s] SPEAKER_01: And then we have clause 7.
+[2773.3s] SPEAKER_01: Nothing else is a
+[2776.6s] SPEAKER_01: We need that clause because without it, we wouldn't know if that's a sentence or not.
+[2783.9s] SPEAKER_01: Like it's an expression.
+[2784.9s] SPEAKER_01: Nothing in clauses one to six shows that it's a sentence.
+[2790.2s] SPEAKER_01: But unless we say, that's it, nothing else is a sentence, there would be unclarity.
+[2796.0s] SPEAKER_01: We'd be unsure whether it was or was not a sentence.
+[2799.5s] SPEAKER_01: But once we have clause seven, that's it.
+[2803.0s] SPEAKER_01: If you can't get that string of symbols by repeated applications of clauses one to six, whatever it is, it just ain't a sentence, not a sentence of the language.
+[2813.0s] SPEAKER_01: And so this is what's called an effective procedure for being able to decide of any string of symbols, whether it is or is not a sentence.
+[2822.8s] SPEAKER_01: You don't have to rely on your intuitions about whether something is an English sentence or not.
+[2827.6s] SPEAKER_01: You could program a machine to just give me the string.
+[2831.9s] SPEAKER_01: I'll spit out either sentence or non-sentence because it will either be
+[2836.8s] SPEAKER_01: established by the clauses, or I won't.
+[2840.2s] SPEAKER_04: Yeah.
+[2841.0s] SPEAKER_04: Could you program a machine to symbolize an English sentence?
+[2844.0s] SPEAKER_01: No.
+[2844.5s] SPEAKER_01: That's a different problem altogether.
+[2846.3s] SPEAKER_01: AI tries to do it.
+[2847.5s] SPEAKER_01: I got personal views about AI.
+[2849.3s] SPEAKER_01: It does OK with simple things.
+[2850.6s] SPEAKER_01: It doesn't do so well.
+[2852.0s] SPEAKER_01: If you are trying to use AI when you're doing these things, be really careful.
+[2867.6s] SPEAKER_01: I did.
+[2867.9s] SPEAKER_01: I spent an afternoon playing around, especially when we got the proofs.
+[2870.4s] SPEAKER_01: I said, give me a proof that does this.
+[2871.8s] SPEAKER_01: And you say, here's a proof.
+[2873.0s] SPEAKER_01: I said, well, no, this one's got this error.
+[2874.6s] SPEAKER_01: Oh, you're right.
+[2875.1s] SPEAKER_01: I'll fix it here.
+[2875.7s] SPEAKER_01: No, this one's got that error.
+[2877.1s] SPEAKER_01: Oh, yeah, yeah.
+[2877.8s] SPEAKER_01: Try this one.
+[2878.7s] SPEAKER_01: And three hours later, it did not come up with the right proof.
+[2882.8s] SPEAKER_01: And it's just, yeah, it's a waste.
+[2884.8s] SPEAKER_05: The language model is not logical.
+[2886.2s] SPEAKER_01: It's a language model.
+[2887.0s] SPEAKER_01: It's not a logical model.
+[2888.0s] SPEAKER_01: Let's put it that way.
+[2889.0s] SPEAKER_01: OK. Let's go through some examples here.
+[2891.8s] SPEAKER_01: Two questions.
+[2892.2s] SPEAKER_01: Are they expressions or are they sentences?
+[2894.4s] SPEAKER_01: So this first one, is that?
+[2897.2s] SPEAKER_01: Is that an expression?
+[2902.1s] SPEAKER_01: Yes.
+[2902.5s] SPEAKER_01: Yep, absolutely.
+[2903.7s] SPEAKER_01: That's a connective, that's a sentence letter.
+[2906.1s] SPEAKER_01: Is it a sentence?
+[2907.3s] SPEAKER_01: No.
+[2908.4s] SPEAKER_01: There's no way you can get that string of symbols just by applying clauses one to six.
+[2914.4s] SPEAKER_01: First of all, we know if you're introducing the carrot, there has to be a sentence on both sides of it, and there has to be a paired set of brackets, and there isn't.
+[2925.1s] SPEAKER_01: B ampersand Z expression?
+[2928.0s] SPEAKER_01: Nope.
+[2929.0s] SPEAKER_01: Nope.
+[2929.1s] SPEAKER_01: Why not?
+[2930.5s] SPEAKER_01: No ampersand TFL.
+[2931.7s] SPEAKER_01: You do not have an ampersand in their language.
+[2934.8s] SPEAKER_01: I think it was in my other class last time I was asked whether we could use the ampersand instead of the character.
+[2941.2s] SPEAKER_01: Quick answer is no.
+[2942.8s] SPEAKER_01: And here's the reason why.
+[2944.3s] SPEAKER_01: Because the ampersand is not in our vocabulary.
+[2948.7s] SPEAKER_01: Say, well, can't I just stick it in?
+[2950.5s] SPEAKER_01: Sure.
+[2951.2s] SPEAKER_01: We could increase our vocabulary by putting that in.
+[2954.9s] SPEAKER_01: But then we would have to add another clause here to govern the ampersand.
+[2961.0s] SPEAKER_01: Plus, when we get to proofs, we're going to have to introduce new rules for that.
+[2965.0s] SPEAKER_01: And it's not doing any work for you.
+[2967.5s] SPEAKER_01: So we want the simplest thing.
+[2970.6s] SPEAKER_01: That concept should only be represented once.
+[2973.7s] SPEAKER_01: Now on the exam, Henry, if you're so used to using the ampersand and you stick that in mistakenly, I might go, I'm not going to call your mother.
+[2983.0s] SPEAKER_01: I might call you out on it, but I'm not going to jump up and down and speak too much about it.
+[2986.8s] SPEAKER_01: If you clearly show you understand the structure and what you're doing on this kind of stuff, I'm not going to be that overly worried, but you should aim for rigor.
+[2994.3s] SPEAKER_01: right you should aim for being as precise as you can if you didn't program the ampersand into a machine to recognize sentences like it would hemorrhage on this and just say not a sentence that is not a symbol in the language uh is it a sentence well no because not the expression immediately you know it's not a sentence this thing
+[3015.7s] SPEAKER_01: Expression?
+[3017.1s] SPEAKER_01: Yep.
+[3017.8s] SPEAKER_01: Is it a sentence?
+[3018.9s] SPEAKER_01: Absolutely.
+[3020.7s] SPEAKER_01: This then.
+[3021.8s] SPEAKER_01: Expression?
+[3022.7s] SPEAKER_01: Yep.
+[3023.1s] SPEAKER_01: Sentence?
+[3023.7s] SPEAKER_01: Nope.
+[3024.2s] SPEAKER_01: Why not?
+[3025.2s] SPEAKER_01: Because it's not defined as a sentence.
+[3029.0s] SPEAKER_01: Well, you couldn't get it from the definition.
+[3030.6s] SPEAKER_01: It looks as if it's trying to treat the unary connective as if it were a binary connective coming between two sentence letters.
+[3037.3s] SPEAKER_01: But even then, it lays off the brackets.
+[3040.3s] SPEAKER_01: So it's just nonsense gobbledook.
+[3044.6s] SPEAKER_01: This one is an expression?
+[3048.2s] SPEAKER_03: Looks, yeah, it's an expression.
+[3050.5s] SPEAKER_03: Is it a sentence?
+[3051.7s] SPEAKER_03: Assuming the parentheses are all correct.
+[3057.2s] SPEAKER_01: That one gets paired with that one.
+[3059.9s] SPEAKER_01: This one gets paired with this one.
+[3062.5s] SPEAKER_01: This one is dangling.
+[3066.4s] SPEAKER_01: Brackets always have to come in pairs.
+[3068.5s] SPEAKER_01: Look at how they get introduced in the definition.
+[3070.8s] SPEAKER_01: And the open bracket always has to come before the closing brackets.
+[3074.1s] SPEAKER_01: So strictly speaking, I shouldn't say that.
+[3077.1s] SPEAKER_01: No, it's not a sentence according to the definition.
+[3079.8s] SPEAKER_01: You cannot get that string of symbols by repeated application of those clauses.
+[3083.9s] SPEAKER_01: So it's just not a sentence.
+[3088.2s] SPEAKER_01: count the number of parentheses.
+[3089.9s] SPEAKER_01: If it's a odd number, just move on right away.
+[3092.6s] SPEAKER_01: Might be an expression, but it ain't gonna be a sentence.
+[3095.3s] SPEAKER_01: But be careful, even if it has an even number, like that one's got an even number, but that's not a sentence.
+[3100.8s] SPEAKER_01: So you gotta then pair them up in the right kind of way.
+[3103.9s] SPEAKER_01: Now, I wouldn't suspect if I got this on an exam, like if you were trying to give me a sentence, I would suspect you just,
+[3119.5s] SPEAKER_01: What about this one?
+[3123.0s] SPEAKER_01: Expression?
+[3125.2s] SPEAKER_01: No.
+[3127.4s] SPEAKER_05: It doesn't use sentence letters.
+[3129.7s] SPEAKER_01: Those are meta variables.
+[3132.3s] SPEAKER_01: Meta variables are not in the vocabulary.
+[3135.3s] SPEAKER_01: They are symbols we use to talk about sentences.
+[3138.8s] SPEAKER_01: They're not part of the sentence of TFL.
+[3143.1s] SPEAKER_01: So it's not an expression, so is it a sentence?
+[3145.5s] SPEAKER_01: No, it can't be.
+[3146.3s] SPEAKER_01: We're going to see a little bit later on from your time that it might represent the form of certain TFL sentences, but it's not a self sentence.
+[3156.5s] SPEAKER_01: What about this one?
+[3157.8s] SPEAKER_01: Expression?
+[3158.4s] SPEAKER_01: Not an expression.
+[3159.1s] SPEAKER_01: No, because those brackets, those square brackets are nominal.
+[3163.6s] SPEAKER_01: Now in a couple seconds we have time, we'll see there is a convention that does allow alternate brackets.
+[3170.3s] SPEAKER_01: It's kind of just a
+[3173.3s] SPEAKER_01: So sometimes it's easier to group them in these different kinds of ways.
+[3176.6s] SPEAKER_01: And with that relaxed bracketing convention, this one would be considered to be a sentence.
+[3183.6s] SPEAKER_01: But strictly speaking, rigorously from the definition, no.
+[3186.6s] SPEAKER_01: Those are not in the vocabulary.
+[3188.5s] SPEAKER_01: So this is a sentence.
+[3189.7s] SPEAKER_01: Done question.
+[3190.9s] SPEAKER_01: Expression here?
+[3192.5s] SPEAKER_01: Nope.
+[3192.8s] SPEAKER_01: Nope.
+[3193.6s] SPEAKER_01: Because of that thing.
+[3194.9s] SPEAKER_01: That is not in the vocabulary.
+[3197.4s] SPEAKER_01: This thing?
+[3198.7s] SPEAKER_01: Same reason.
+[3199.3s] SPEAKER_01: Same reason.
+[3200.4s] SPEAKER_01: That's going to be in the language of first-order logic, but it's not in the language of trig-function logic.
+[3207.2s] SPEAKER_01: This thing?
+[3211.1s] SPEAKER_01: That's long and complicated.
+[3213.4s] SPEAKER_01: It's an expression.
+[3215.6s] SPEAKER_01: Sentence.
+[3216.5s] SPEAKER_01: Hmm.
+[3216.6s] SPEAKER_01: Yeah.
+[3217.9s] SPEAKER_01: So here, binary connected, brackets are in the right place.
+[3222.6s] SPEAKER_01: That binary connected, brackets are in the right place.
+[3225.9s] SPEAKER_01: This binary connected, brackets are in the right place.
+[3229.1s] SPEAKER_01: This binary connected, brackets are in the right place.
+[3231.8s] SPEAKER_01: So good, that is a sentence.
+[3234.6s] SPEAKER_01: And so it's going to have a truth value.
+[3236.0s] SPEAKER_01: Because remember, sentences are things that are capable of having truth values.
+[3239.8s] SPEAKER_01: It could function as a premise or a conclusion.
+[3246.8s] SPEAKER_01: It's an expression?
+[3247.8s] SPEAKER_01: Missing its brackets?
+[3248.9s] SPEAKER_01: It's missing the outermost brackets, so it is not a sentence.
+[3252.7s] SPEAKER_01: And again, in about two seconds, we're going to introduce another lazy bracketing convention that allows us to drop off the outermost brackets.
+[3261.6s] SPEAKER_01: But officially, it would need, because here we have the binary connected, we would need those outermost brackets on there.
+[3269.5s] SPEAKER_01: Tilde, tilde, tilde, tilde, tilde G expression?
+[3272.0s] SPEAKER_01: Yeah.
+[3272.5s] SPEAKER_01: Sentence?
+[3273.1s] SPEAKER_01: Yeah.
+[3273.4s] SPEAKER_01: Yeah.
+[3274.2s] SPEAKER_01: It would just be... Tilde bracket, tilde C sub 24 bracket expression?
+[3279.6s] SPEAKER_01: No.
+[3280.2s] SPEAKER_01: Expression, yeah.
+[3281.5s] SPEAKER_01: Not a sentence, though.
+[3284.4s] SPEAKER_01: Not a sentence.
+[3285.9s] SPEAKER_01: There's no way that bracket can get in there.
+[3289.2s] SPEAKER_01: The only way you can get a bracket into a sentence is when you're introducing a binary connective.
+[3295.9s] SPEAKER_01: And tilde is not a binary connective.
+[3298.9s] SPEAKER_01: And finally, this one?
+[3300.2s] SPEAKER_01: Yes, both.
+[3301.2s] SPEAKER_01: Expression and sentence.
+[3302.7s] SPEAKER_01: Good.
+[3303.7s] SPEAKER_01: So play around with those.
+[3305.5s] SPEAKER_01: You get to the point where you just don't take any time.
+[3308.7s] SPEAKER_01: You infallibly control sentences and non-sentences.
+[3312.2s] SPEAKER_07: Yeah?
+[3312.7s] SPEAKER_07: So just going back to m, like you want n, the reason that that's not a sentence is because you can't just have the n mixed to the not n. Like that, it would require a connection between brackets?
+[3322.4s] SPEAKER_01: Yeah, so you would have to have a binary connected between them.
+[3326.3s] SPEAKER_01: And then you would have to have brackets around it.
+[3328.6s] UNK: All right.
+[3330.1s] SPEAKER_01: And similarly here, you can't go, you can't put the symbol on that side.
+[3336.2s] SPEAKER_01: It's gotta come between them, even if you had brackets there.
+[3340.7s] SPEAKER_01: There are some notations that do do this, that don't stick it in the middle, but that's not ours, right?
+[3348.4s] SPEAKER_01: There's nothing special about ours.
+[3351.2s] SPEAKER_01: They're all equally good, but the idea is you have to rigorously define one way and then you gotta stick with that way.
+[3357.0s] SPEAKER_01: That's the important thing here.
+[3359.1s] SPEAKER_01: Okay, so there's a bunch of other concepts that we get, not for free, but this is the proper place to introduce them because they're concepts that are only related to the syntax, the purely language part of it without any interpretation or anything like that.
+[3374.8s] SPEAKER_01: And they're gonna become really key concepts for us later on.
+[3378.8s] SPEAKER_01: And so this is the proper place to introduce them.
+[3381.4s] SPEAKER_01: So we've seen that the unary connective, the negation, attaches to a single sentence.
+[3385.8s] SPEAKER_01: The sentence may be simple, or it may be common, as in that case, or it might be complex, as in that kind of case.
+[3394.3s] SPEAKER_01: But every time we have the negation used, it attaches itself to just one sentence, and it comes to the left of it.
+[3401.1s] SPEAKER_01: Other than that, the binary connectives, they always come between.
+[3404.5s] SPEAKER_01: sentences and then we encase the whole thing in brackets.
+[3408.5s] SPEAKER_01: And that could be a case of coming between two atomic sentences or it could also be the case where it comes between complex sentences.
+[3416.7s] SPEAKER_01: So that's something just kind of a general feature about how the connect is used.
+[3427.3s] SPEAKER_01: They operate on
+[3430.9s] SPEAKER_01: either a single sentence for the negation or two sentences for the binary connectives to produce the complex sentence.
+[3438.6s] SPEAKER_01: Those sentences that they're operating on, interacting with, connecting if you want, we call those sub-sentences.
+[3448.4s] SPEAKER_01: So in this case, tilde A, the tilde is operating on the A, so that is a sub-sentence of the sentence.
+[3457.1s] SPEAKER_01: Notice sub-sentences are themselves sentences.
+[3461.4s] SPEAKER_01: of a sentence in such a way that it would guarantee that every sub-sentence is also a sentence.
+[3467.7s] SPEAKER_01: In this case, this tilde is operating on this, so that whole thing is the sub-sentence.
+[3474.2s] SPEAKER_01: In this case, this arrow is operating on this, so that's a sub-sentence, and on that, so that those are its two sub-sentences.
+[3484.3s] SPEAKER_01: Every sentence, well, now get the next thing.
+[3487.8s] SPEAKER_01: Scope of the connective and main connective, we'll start with this one.
+[3492.6s] SPEAKER_01: Complex sentences may have more than one connective used in them.
+[3496.7s] SPEAKER_01: There's one.
+[3497.6s] SPEAKER_01: There's two connectives going on in that case.
+[3501.4s] SPEAKER_01: This one's got one, two, three connectives being used.
+[3505.5s] SPEAKER_01: No matter how many connectives are being used in a sentence, there is always guaranteed to be exactly one main connective.
+[3513.7s] SPEAKER_01: And that's the predominant connective.
+[3515.4s] SPEAKER_01: That's the one that kind of, it's like the one ring.
+[3519.0s] SPEAKER_01: It defines the kind of sentence that it is.
+[3522.6s] SPEAKER_01: And part of the idea is the main connective is determined by the very last clause you have to point to in the definition to get this thing to be a sentence.
+[3531.6s] SPEAKER_01: If the last stage is clause two, then the main connective will be the negation.
+[3536.3s] SPEAKER_01: If the last stage is clause four, then it's the
+[3547.2s] SPEAKER_01: We say that the scope of a connective is the sentence or sub-sentences that it's operating on to produce the bigger sentence.
+[3556.3s] SPEAKER_01: And every sentence has exactly one main connective.
+[3559.4s] SPEAKER_01: And that main connective is going to define at base the kind of sentence, the sentence type.
+[3566.5s] SPEAKER_01: And there are exactly six types of sentences in truth functional logic.
+[3571.1s] SPEAKER_01: There are atomic sentences.
+[3573.3s] SPEAKER_01: They have no connectives.
+[3576.4s] SPEAKER_01: And there are complex sentences or molecular sentences.
+[3580.6s] SPEAKER_01: They have at least one connective, and there are five of those.
+[3585.0s] SPEAKER_01: There's a negation, conjunction, disjunction, conditional, and biconditional.
+[3589.7s] SPEAKER_01: This sentence is at base, its sentence type is a negation.
+[3596.5s] SPEAKER_01: Because its main connective is that thing.
+[3600.3s] SPEAKER_01: At base, this is a negation.
+[3602.4s] SPEAKER_01: So if you were asked to classify it, you would say it's a negation.
+[3607.7s] SPEAKER_01: you would not classify it as a conditional, even though it has an arrow in it.
+[3611.7s] SPEAKER_01: The arrow is not the main connective.
+[3615.3s] SPEAKER_01: On the other hand, in that thing, the main connective is the arrow.
+[3624.9s] SPEAKER_01: And so we would classify it as a conditional.
+[3628.7s] SPEAKER_01: At base, that's the kind of sentence that it is.
+[3633.5s] SPEAKER_01: And we can see why it's a conditional because of how it's built up.
+[3637.8s] SPEAKER_01: We get this, we then get that, we get this, then we stick them together to form that.
+[3644.6s] SPEAKER_01: And it is also gonna tell us how we can break it apart later, which is gonna be really, really key to what we wanna do.
+[3651.7s] SPEAKER_01: So there's a number of questions in the practice thing about that.
+[3655.3s] SPEAKER_01: Here's a sentence, what's the main connective?
+[3657.7s] SPEAKER_01: What kind of sentence is it?
+[3659.4s] SPEAKER_01: Do a lot of those kinds of things.
+[3662.2s] SPEAKER_01: So let's do these ones.
+[3664.0s] SPEAKER_01: I'm going to circle the main connective.
+[3666.2s] SPEAKER_01: I'm going to underline the sub-sentences, and then I'm going to classify them.
+[3672.3s] SPEAKER_01: So the first case, the main connective, is the arrow.
+[3677.7s] SPEAKER_01: And so it's a conditional.
+[3682.6s] SPEAKER_01: Its sub-sentences are, in this case, B and not A.
+[3689.5s] SPEAKER_01: Second case, the main connective is the negation.
+[3694.5s] SPEAKER_01: Its scope is that thing.
+[3697.9s] SPEAKER_01: So it's a negation.
+[3703.4s] SPEAKER_01: Third case, that's the main connective.
+[3706.8s] SPEAKER_01: The scope is that thing and that thing.
+[3710.1s] SPEAKER_01: So this is a biconditional.
+[3715.9s] SPEAKER_01: And this last one, that's the main connective.
+[3723.6s] SPEAKER_01: is the sub-sentence that's within the scope.
+[3729.1s] SPEAKER_01: That's the other sub-sentence, and so this is a conditional.
+[3736.3s] SPEAKER_01: Can you see that by calling both the first one and the last one conditionals, we are indicating that there's something common between them.
+[3746.0s] SPEAKER_01: There's something important from a logical point of view that they both represent or both have.
+[3751.8s] SPEAKER_01: And that's namely that they're both
+[3754.0s] SPEAKER_01: Conditionals.
+[3754.6s] SPEAKER_01: The main connective is an arrow.
+[3757.7s] SPEAKER_01: This one is way more complex than this one, but there is a level of analysis in which there's the same kind of logical complexity.
+[3765.3s] SPEAKER_01: These are both conditionals.
+[3768.4s] SPEAKER_01: They're similar to this one, which is also a conditional.
+[3773.8s] SPEAKER_01: Those three different sentences nonetheless have something in common.
+[3778.1s] SPEAKER_01: Sometimes we're interested in that level.
+[3780.3s] SPEAKER_01: But this one isn't just any old conditional.
+[3783.6s] SPEAKER_01: It's a conditional whose antecedent is negated.
+[3788.5s] SPEAKER_01: So it's got something in common with this conditional.
+[3794.1s] SPEAKER_01: That's also a conditional whose antecedent is negated.
+[3798.4s] SPEAKER_01: And similarly with this thing.
+[3809.6s] SPEAKER_01: That is also a conditional whose antecedent is negated.
+[3813.8s] SPEAKER_01: And sometimes that's what we care about.
+[3815.8s] SPEAKER_01: That fact.
+[3817.4s] SPEAKER_01: And so being able to see that commonality is important.
+[3821.0s] SPEAKER_01: The last one is also conditional.
+[3823.2s] SPEAKER_01: That one is also conditional whose antisem is negated.
+[3828.8s] SPEAKER_05: No, it isn't.
+[3831.5s] SPEAKER_05: It is?
+[3831.7s] SPEAKER_05: Yes, it is.
+[3832.2s] SPEAKER_01: Because you're negating the...
+[3834.5s] SPEAKER_01: Right.
+[3834.6s] SPEAKER_01: Yes.
+[3835.2s] SPEAKER_01: Yes, it is.
+[3837.9s] SPEAKER_01: Yeah.
+[3838.7s] SPEAKER_01: Yeah.
+[3839.5s] SPEAKER_01: So we can start skating around these things, seeing what's in common, seeing what's different, and being able to kind of do that simultaneously is really the key to understanding logic.
+[3849.2s] SPEAKER_01: Quickly, the bracket convention, I've already mentioned, so I don't need to spend a lot of time on it.
+[3853.3s] SPEAKER_01: Just to make our lives easy, the reason we need, going back to your question, the reason we need the brackets is to make sure we don't have any ambiguity.
+[3860.8s] SPEAKER_01: Like if we had this thing, I have no way of knowing how it's to be interpreted.
+[3868.0s] SPEAKER_01: Is it to be interpreted as a disjunction whose right disjunct is a conjunction?
+[3873.5s] SPEAKER_01: Or is it to be interpreted as a conjunction whose left conjunct is a disjunction?
+[3878.6s] SPEAKER_01: And those are very different sentences.
+[3880.5s] SPEAKER_01: They're very different traditions.
+[3881.9s] SPEAKER_07: Yeah.
+[3886.9s] SPEAKER_01: So if you have the same connective going on through there,
+[3890.2s] SPEAKER_01: And we get a sense that it doesn't really matter.
+[3892.9s] SPEAKER_01: There's not really going to be any ambiguity here.
+[3895.1s] SPEAKER_01: So in this case, we could disambiguate.
+[3897.5s] SPEAKER_01: Here's one way of doing it.
+[3898.9s] SPEAKER_01: The other way would be A or B and C. But with this, we can get A and B and C. Or we can get A and B and C.
+[3916.4s] SPEAKER_01: We could say if we have multiple cases of the same connective, we don't need to have the brackets in, but guess what?
+[3922.4s] SPEAKER_01: We would need to add new clauses to this thing.
+[3927.2s] SPEAKER_01: And is that really worth, do we want to go back and open that count of worms?
+[3931.2s] SPEAKER_01: Or can we just deal with using brackets?
+[3935.2s] SPEAKER_01: We can just deal with using brackets, but we are going to be allowed in certain cases, when there's no serious potential of ambiguity or confusion, just by dropping off the outermost ones,
+[3946.4s] SPEAKER_01: Go ahead and do that.
+[3947.9s] SPEAKER_01: So officially this is not a sentence.
+[3951.4s] SPEAKER_01: That is.
+[3952.3s] SPEAKER_01: But by this first relaxed convention we can drop off those outermost brackets.
+[3958.5s] SPEAKER_01: And that's fine.
+[3959.1s] SPEAKER_01: We'll count that as a sentence for practical purposes.
+[3962.2s] SPEAKER_01: And I'm going to be doing that pretty much for the rest of the term and you're certainly encouraged and welcome to do that as well.
+[3970.4s] SPEAKER_01: But when they're not
+[3976.1s] SPEAKER_01: But we've got to be careful, too, if it's a conditional.
+[3979.6s] SPEAKER_01: That does make a big difference.
+[3981.8s] SPEAKER_01: This conditional is very different than this conditional.
+[3986.5s] SPEAKER_01: So we've got to be careful about these things.
+[3988.8s] SPEAKER_01: And all the convention says is if it's the outermost brackets only, you can drop those off.
+[3994.9s] SPEAKER_01: And that's fine.
+[3996.1s] SPEAKER_01: So in this case, I could drop off these outermost ones and get that.
+[4001.3s] SPEAKER_01: I cannot drop those ones off to get this because those are not outermost and I would get an ambiguous sentence.
+[4009.4s] SPEAKER_01: These ones here are not outermost.
+[4013.3s] SPEAKER_01: Outermost literally means furthest to the right and furthest to the left.
+[4016.9s] SPEAKER_01: No other symbol to the right or left of it.
+[4019.4s] SPEAKER_01: In this case, the negation is to the left of that bracket, so it's not an outermost bracket.
+[4025.0s] SPEAKER_01: So I can't do that.
+[4027.2s] SPEAKER_01: So you're allowed to use that convention, and that will be pretty much used the rest of the year.
+[4032.6s] SPEAKER_01: The second relaxed bracketing convention is when you have a long complex sentence.
+[4038.2s] SPEAKER_01: Sometimes it's really easy to lose track of where the brackets are.
+[4042.5s] SPEAKER_01: So we can start allowing some alternate brackets.
+[4046.6s] SPEAKER_01: In this case, I'm using the first convention, dropping off the outermost ones.
+[4050.2s] SPEAKER_01: Get something a little bit simpler.
+[4051.9s] SPEAKER_01: But it's still got a fair amount of complexity to it.
+[4054.4s] SPEAKER_01: So I'm gonna introduce these slightly different rockets, these angular square rockets.
+[4059.8s] SPEAKER_01: And maybe that'll make a little bit clearer, a little bit easier for me to keep track of this thing.
+[4064.1s] SPEAKER_03: And you're allowed to do that.
+[4066.2s] SPEAKER_01: It's kind of just visual, but we've got to
+[4072.1s] SPEAKER_01: Those.
+[4073.6s] SPEAKER_01: Never.
+[4074.8s] SPEAKER_01: In this kind of thing.
+[4076.3s] SPEAKER_01: Why?
+[4077.3s] SPEAKER_01: Set theory?
+[4078.1s] SPEAKER_01: They're sets.
+[4079.3s] SPEAKER_01: We need those for sets.
+[4081.1s] SPEAKER_01: We already have.
+[4081.7s] SPEAKER_01: We know that sets are very important linguistic structures.
+[4084.1s] SPEAKER_01: They're the premises of an argument.
+[4086.2s] SPEAKER_01: They can be considered just by themselves.
+[4088.1s] SPEAKER_01: They're jointly possible or impossible.
+[4090.0s] SPEAKER_01: So we need those.
+[4091.1s] SPEAKER_01: You can't use those ones either.
+[4092.8s] SPEAKER_01: When we get the first R logic next week, we're going to use those for different purposes.
+[4096.6s] SPEAKER_01: So we don't want to introduce confusion there.
+[4098.8s] SPEAKER_01: I actually don't like this convention.
+[4100.9s] SPEAKER_01: I never use it myself.
+[4102.1s] SPEAKER_01: I use the other one all the time.
+[4103.9s] SPEAKER_01: But I do mention because some of the answers in the solutions manual will use this, and so you should be aware of it.
+[4110.3s] SPEAKER_01: The last thing I want to get at is sintetra porcel, coming back to this idea.
+[4119.4s] SPEAKER_01: We introduced the sentence letters at the beginning to symbolize the common sentences.
+[4128.6s] SPEAKER_01: of English.
+[4130.6s] SPEAKER_01: And we then said that the sentence letter that's assigned to an atomic sentence in a civilization key represents the logical form of that sentence.
+[4144.6s] SPEAKER_01: And then we said that when we symbolize an English sentence into truth functional logic, the sentence in truth functional logic represents the logical form of the English sentence.
+[4159.4s] SPEAKER_01: And that's all correct.
+[4161.3s] SPEAKER_01: But now we wanna do something similar.
+[4163.5s] SPEAKER_01: We want to be able to understand what the logical form of a TFL sentence is.
+[4171.4s] SPEAKER_01: It may be the same as it looks, but we're gonna see cases where they could have other forms, and sometimes they're important as well.
+[4178.9s] SPEAKER_01: So we wanna talk about sentences of TFL, and we wanna talk about the forms that they take, they can take, and those are the sentential forms.
+[4190.3s] SPEAKER_01: The sentences of TFL we've just seen, there's only three types of things that make them up.
+[4195.0s] SPEAKER_01: Sentence letters, connectives, and brackets.
+[4198.0s] SPEAKER_01: You gotta put them together according to that definition.
+[4201.5s] SPEAKER_01: But when we're talking about sentential forms, the form that TFL sentences can take, they don't contain any sentence letters.
+[4210.3s] SPEAKER_01: They do contain connectives and brackets in exactly the same sense, but instead of sentence letters, they contain sentential variables.
+[4218.1s] SPEAKER_01: And remember, a sentential variable can represent any sentence of TFL.
+[4226.3s] SPEAKER_01: So if I get this sentence A, I can see that this can represent one of its forms, a kind of scripted A.
+[4240.3s] SPEAKER_01: But scripted A also represents a form of this sentence, B.
+[4246.6s] SPEAKER_01: A and B are different sentences.
+[4249.1s] SPEAKER_01: In a symbolization key, they'd have to be assigned to different English sentences.
+[4253.2s] SPEAKER_01: They have different content.
+[4255.0s] SPEAKER_01: But they have something in common.
+[4256.9s] SPEAKER_01: They're both sentences.
+[4258.4s] SPEAKER_01: And they both take the form of a sentence.
+[4262.3s] SPEAKER_01: Think about this thing.
+[4263.7s] SPEAKER_01: If B, then C. Well, that's a sentence.
+[4268.9s] SPEAKER_01: It's also a conditional.
+[4271.2s] SPEAKER_01: But all conditionals are sentences.
+[4272.8s] SPEAKER_01: A conditional is a sentence whose main connective is the arrow.
+[4276.6s] SPEAKER_01: And so it shares something in common with those two as well because it has that form.
+[4285.1s] SPEAKER_01: All sentences have this form.
+[4287.5s] SPEAKER_01: That represents the form of any sentence whatsoever.
+[4290.5s] SPEAKER_01: Look to see how we use it in the definitions.
+[4294.3s] SPEAKER_01: Nothing special about scripted A. Scripted B can also represent the form of every sentence.
+[4301.9s] SPEAKER_01: Nonetheless,
+[4304.1s] SPEAKER_01: While there is something in common between those two things, there's definitely something that sets them apart.
+[4310.6s] SPEAKER_01: This thing is atomic, this thing is not.
+[4313.3s] SPEAKER_01: This is a conditional, this one is not.
+[4316.8s] SPEAKER_01: So here's what I can do in this case.
+[4319.4s] SPEAKER_01: It has the form, say A arrow B, using the meta variables there.
+[4325.2s] SPEAKER_01: That represents a form, and it represents the form of every conditional.
+[4331.8s] SPEAKER_01: Every conditional has that form.
+[4335.6s] SPEAKER_01: So the sentence B arrow C shares something in common with T arrow tilde G. They're both conditionals.
+[4346.9s] SPEAKER_01: They both have this form.
+[4350.2s] SPEAKER_01: So there's something in common between them.
+[4354.3s] SPEAKER_01: They also have that form.
+[4356.5s] SPEAKER_01: Every sentence has that form.
+[4358.8s] SPEAKER_01: So there's something in common between those.
+[4361.4s] SPEAKER_01: But there is something different between this one and this one.
+[4365.4s] SPEAKER_01: Yes, they're both conditionals, but that one isn't just any old conditional.
+[4370.0s] SPEAKER_01: That's a conditional whose consequent is negated.
+[4375.0s] SPEAKER_01: So I could represent its form like that.
+[4379.5s] SPEAKER_01: Script A arrow tilde script B.
+[4383.0s] SPEAKER_01: And that's gonna represent the form of any conditional whose consequent is negated.
+[4389.3s] SPEAKER_01: Like this one.
+[4393.9s] SPEAKER_03: What would a script A conditional script be still represented?
+[4400.1s] SPEAKER_03: It shares this form.
+[4402.1s] SPEAKER_01: So this sentence has this form and it has that form.
+[4407.9s] SPEAKER_01: And it has that form.
+[4409.8s] SPEAKER_01: And it has that form.
+[4411.4s] SPEAKER_01: And it has an infinite number of forms.
+[4413.3s] SPEAKER_01: Sometimes this is the level of analysis we're interested in.
+[4417.2s] SPEAKER_01: Sometimes this is the level of analysis we're interested in.
+[4420.9s] SPEAKER_01: Sometimes this is what we're interested in.
+[4423.9s] SPEAKER_01: Depends on what the problem is.
+[4426.1s] SPEAKER_01: And we gotta be able to work back and forth through all of these things.
+[4430.3s] SPEAKER_01: So here's kind of the idea of how all of this works.
+[4433.6s] SPEAKER_01: To figure out what the form is, or what possible forms a sentence has, we systematically replace sub-sentences with sentential meta variables.
+[4444.8s] SPEAKER_01: And it's just a straightforward unplug the sub-sentence, replace it with the intended meta variable.
+[4453.2s] SPEAKER_01: Now, every sentence is a sub-sentence of itself.
+[4456.8s] SPEAKER_01: So if I start off with the simplest case of atomic sentence A,
+[4460.7s] SPEAKER_01: It's a subsetence of itself, so I'm going to represent, I'm going to tell you.
+[4464.6s] SPEAKER_01: I'm going to replace the subsetence A, just literally going to unplug it, replace it with the meta variable script A, and I get that as its form.
+[4474.3s] SPEAKER_01: So it's this process of replacement that leads me from the sentence to the form.
+[4479.3s] SPEAKER_01: You can also go in the other direction, but I won't worry about that so much today.
+[4482.5s] SPEAKER_01: Nothing special about meta variable A. I could have picked meta variable B instead.
+[4487.7s] SPEAKER_01: Under this replacement, this is what I would get as the form.
+[4491.8s] SPEAKER_01: And the sentence has both of those forms.
+[4494.0s] SPEAKER_01: So right there it's got an infinite number of forms.
+[4496.2s] SPEAKER_01: But they're all at the same level of logical complexity, so we lose interest in that after about the third one.
+[4502.5s] SPEAKER_01: This example is more interesting.
+[4505.7s] SPEAKER_01: It's a sentence, so I can replace the sub-sentence, the entire sentence, with the variable a and get this as one of its forms.
+[4518.0s] SPEAKER_01: and g carat e are both sentences.
+[4520.4s] SPEAKER_01: So they better have a form in common.
+[4523.3s] SPEAKER_01: But I couldn't do a more complex level of analysis.
+[4526.8s] SPEAKER_01: I'll break it down into these sub-sentences.
+[4529.1s] SPEAKER_01: Remember how we define those.
+[4530.5s] SPEAKER_01: I'll replace the first sub-sentence with the variable a, and the second sub-sentence with the variable b, and I'll get that as representing it before.
+[4539.4s] SPEAKER_01: Notice I'm using the lazy convention even here.
+[4544.0s] SPEAKER_01: So it's carrying on.
+[4546.4s] SPEAKER_01: Up the ante even more.
+[4547.9s] SPEAKER_01: So here, you can treat it just as a sentence.
+[4550.6s] SPEAKER_01: Replace the entire thing with a variable.
+[4554.7s] SPEAKER_01: Or recognize that a arrow t is a sub-sentence.
+[4560.9s] SPEAKER_01: So replace that sub-sentence with b and get tilde b as its form.
+[4567.8s] SPEAKER_01: or break it down even further.
+[4569.8s] SPEAKER_01: Replace the sub-sentence A with B and the sub-sentence T with C, and then literally you remove the A, replace it with the B, and everything else stays the same, and I get back to these forms.
+[4582.1s] SPEAKER_01: Move back and forth amongst the forms.
+[4586.9s] SPEAKER_01: Couple of things.
+[4588.2s] SPEAKER_01: If a sentence letter appears more than once in a sentence, say if A and A,
+[4597.6s] SPEAKER_01: You can either replace each sub-sentence with a different variable to get A arrow script A arrow script B.
+[4614.1s] SPEAKER_01: And that's as it better be because that's a conditional.
+[4618.4s] SPEAKER_01: Or in this special case, you can elect to replace both occurrences of the sentence letter with the same variable
+[4628.4s] SPEAKER_01: And so we'd get script A arrow script A as one of its forms.
+[4634.0s] SPEAKER_01: This represents the form of every conditional whose antecedent is the same as its consequence.
+[4639.6s] SPEAKER_01: Would that ever happen though?
+[4640.8s] SPEAKER_01: Oh, yes.
+[4641.5s] SPEAKER_01: Well, absolutely.
+[4644.7s] SPEAKER_01: They're all going to be necessarily true.
+[4647.1s] SPEAKER_01: So that's important to know.
+[4650.3s] SPEAKER_01: This only represents the form of conditionals.
+[4652.2s] SPEAKER_01: Some of them may have the same antecedent as its consequence, but they don't have to.
+[4657.2s] SPEAKER_01: Is it getting clear?
+[4658.6s] SPEAKER_01: There's lots of practice on that.
+[4660.2s] SPEAKER_01: It's the kind of concept.
+[4661.1s] SPEAKER_01: It really, really is key to understanding logic.
+[4664.2s] SPEAKER_01: And there is a learning curve.
+[4665.8s] SPEAKER_01: Do enough of these exercises.
+[4668.1s] SPEAKER_01: You will go over this.
+[4669.3s] SPEAKER_01: And I like validity to what happens for life.
+[4670.2s] SPEAKER_01: All right.
+[4670.6s] SPEAKER_01: That's it.
+[4671.1s] SPEAKER_01: That's enough.

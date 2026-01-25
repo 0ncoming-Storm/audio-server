@@ -1,0 +1,1057 @@
+[0.0s] SPEAKER_04: The class average was high, stupidly high, but it always is.
+[5.3s] SPEAKER_04: Quizzes are much easier than the exams are because you actually have to do a lot more work.
+[10.3s] SPEAKER_04: These are just auto-graded sorts of things.
+[12.5s] SPEAKER_04: But if you did well on it, that's great, wonderful, congratulate yourself.
+[15.8s] SPEAKER_04: There's a lot of complex concepts in there and you're starting to work your way through them, that's great.
+[22.3s] SPEAKER_04: But don't get overly complacent because things are going to keep upping the ante as we go along.
+[27.3s] SPEAKER_04: So then we're gonna kind of fall into a pattern every Monday tutorial.
+[31.8s] SPEAKER_04: Virtually there's a couple that we don't.
+[34.3s] SPEAKER_04: You're gonna be writing those quizzes.
+[36.8s] SPEAKER_04: um okay so the next one is going to cover everything we're going to do this week and we're going to kind of fall into a pattern for the most part where the monday quiz is going to cover material that we looked at in the previous week so that's kind of a nice placement for it um there's a couple holidays things thrown in there that complicate things a little bit but we'll deal with those later
+[57.7s] SPEAKER_04: So today we're starting unit two, what you're calling just language.
+[61.7s] SPEAKER_04: Unit one was the key concepts of logic, and there's a bazillion of them there, I know.
+[67.5s] SPEAKER_04: And I'm going to start off by going back to a couple of them today.
+[73.4s] SPEAKER_04: But when we did all of that, we were working with natural language, with English, and relatively ordinary context.
+[80.8s] SPEAKER_04: And also, already we saw some complexity when we try to reason using English.
+[86.0s] SPEAKER_04: It gets difficult.
+[87.3s] SPEAKER_04: So this might motivate us to start looking at how to develop these formal systems and give us some ideas of how we want to do it.
+[95.2s] SPEAKER_04: So in the language part of it,
+[100.5s] SPEAKER_04: We're not terribly concerned with what we can do with the language, what anything we construct in the language might mean.
+[108.0s] SPEAKER_04: We're dealing with the purely syntactic elements.
+[111.0s] SPEAKER_04: What are the basic symbols?
+[112.6s] SPEAKER_04: How can we put them together?
+[114.9s] SPEAKER_04: And then later we'll talk about how we're going to manipulate them.
+[118.4s] SPEAKER_04: But to get there, we're going to go back and start, not start, but look at English as kind of our springboard on this.
+[125.8s] SPEAKER_04: So chapter five is called Truth Functional Logic, Steps to Symbolizing.
+[132.0s] SPEAKER_04: So our goal is to learn how to symbolize English sentences into truth functional logic.
+[140.2s] SPEAKER_04: And that will help us understand what truth functional logic is and how it's composed.
+[146.2s] SPEAKER_04: We're going to finish that and we're going to get to Chapter 6, Connectives.
+[150.7s] SPEAKER_04: We'll get to the end of the content of Chapter 6 today, but I'm going to start on Thursday's class by going back to that and kind of looking at more examples of increasing complexity on there.
+[163.7s] SPEAKER_04: But we will get to Chapter 7.
+[165.9s] SPEAKER_04: which is called the Sentences of Truth Functional Logic.
+[169.0s] SPEAKER_04: We are going to rigorously define what a sentence in the language is, what the vocabulary is, what the grammar is, and a whole bunch of other subsidiary concepts.
+[179.7s] SPEAKER_04: And then that's gonna be it for the language of our formal system, Truth Functional Logic.
+[185.6s] SPEAKER_04: A week from today, we're going to jump into chapter eight, which is gonna start introducing us to first order logic.
+[193.4s] SPEAKER_04: which ups the ante of complexity quite a bit, but it's a week before we even get to that.
+[200.2s] SPEAKER_04: So let's just go back to kind of what we did last class, last couple classes.
+[205.4s] SPEAKER_04: Chapter two, concept of an argument.
+[208.5s] SPEAKER_04: Chapter three, introduced us to the central logical properties we're interested in of arguments.
+[216.2s] SPEAKER_04: Every argument is either valid or invalid.
+[218.8s] SPEAKER_04: And then we talked about soundness, that's a logical property of argument we got more or less for free, but we saw that we're not so much interested in soundness, we're really interested in validity.
+[228.5s] SPEAKER_04: And then we tried to define validity and understand it.
+[232.0s] SPEAKER_04: That led us to that discussion of cases, cases where there are certain distributions of truth values.
+[239.2s] SPEAKER_04: We saw that there's not just one kind of validity, there's at least three.
+[243.7s] SPEAKER_04: There is conceptual validity, non-logical validity,
+[247.9s] SPEAKER_04: and logical validity.
+[249.8s] SPEAKER_04: And ultimately all we care about is logical validity.
+[252.6s] SPEAKER_04: And how do we get to that?
+[254.4s] SPEAKER_04: So take the concept of logical validity.
+[258.1s] SPEAKER_04: The definition is an argument is logically valid if and only if there is no case in which all of the premises are true and the conclusion is false.
+[267.6s] SPEAKER_04: So the definition actually builds in a method for deciding if the property is there or not.
+[273.0s] SPEAKER_04: Think about whether there is or is not such a case.
+[278.0s] SPEAKER_04: And all we had to go with at that point was this, what I'm calling the kind of the Sesame Street method.
+[283.3s] SPEAKER_04: Use your powers of imagination.
+[286.0s] SPEAKER_04: Conceive of a situation in which all of the premises are true.
+[290.1s] SPEAKER_04: Can you simultaneously conceive, consistent with that, the conclusion being false?
+[295.9s] SPEAKER_04: If you can, then the argument is invalid.
+[298.4s] SPEAKER_04: If there is a case in which the premises are true and the conclusion false, you just conceived it.
+[303.2s] SPEAKER_04: If you can't do that and you worked hard, probably the answer is it's valid.
+[309.2s] SPEAKER_04: It's inconceivable.
+[310.6s] SPEAKER_04: There's no way you can simultaneously imagine the premise is true and the conclusion falls.
+[314.7s] SPEAKER_04: Wouldn't the only thing that you're proving there is that you can't think of a situation like that?
+[317.7s] SPEAKER_04: So that's why it's not a great method.
+[319.4s] SPEAKER_04: That's why it's too psychologically based, too contingent upon you and your powers of imagination and how much money your parents spent on your education and all of those kinds of factors we know are built in there.
+[332.1s] SPEAKER_04: So we don't want to stop there.
+[334.8s] SPEAKER_04: We want to do better than that.
+[336.5s] SPEAKER_04: And that's kind of our motivation going on.
+[338.8s] SPEAKER_04: And that's not just for arguments.
+[340.1s] SPEAKER_04: We can extend that to all four of the linguistic structures and their central properties.
+[347.5s] SPEAKER_04: So sets of sentences.
+[349.3s] SPEAKER_04: Can you conceive of all the premises being true at the same time?
+[353.3s] SPEAKER_04: If you can, jointly possible.
+[355.6s] SPEAKER_04: If you can't, jointly impossible.
+[358.2s] SPEAKER_04: Pairs of sentences, can you conceive of one being true and the other false?
+[362.9s] SPEAKER_04: Then they're not necessarily equivalent.
+[365.4s] SPEAKER_04: Individual sentences, can you conceive of it being true?
+[369.2s] SPEAKER_04: If you can't, then necessarily false.
+[371.4s] SPEAKER_04: And so on and so on and so on.
+[373.2s] SPEAKER_04: So that notion of a case weaves its way through all four of these linguistic structures, and hence all of the relative logical properties, but the method that it points to is not ideal.
+[386.1s] SPEAKER_04: We want to do something better.
+[388.4s] SPEAKER_04: And we're going to get that by remembering what we did in chapter three.
+[393.6s] SPEAKER_04: So in chapter three, we saw different kinds of validity, and then we said, yeah, but the only kind we care about is the logically valid.
+[401.9s] SPEAKER_04: There is no case, period.
+[403.3s] SPEAKER_04: So it doesn't matter what the facts are.
+[405.0s] SPEAKER_04: It doesn't matter how we speak, what these words mean, what our concepts are.
+[409.1s] SPEAKER_04: We're just trying to look at the thing itself.
+[411.4s] SPEAKER_04: And how do we do that?
+[412.8s] SPEAKER_04: Well, we look at the structure of the argument.
+[417.3s] SPEAKER_04: So at the same time, we replaced logically valid, and we didn't replace it, but we refined the concept of the logically valid in terms of the concept of the formal valid.
+[429.7s] SPEAKER_04: So there the notion was an argument is formally valid.
+[433.2s] SPEAKER_04: If it's valid, no case in which the premises are true, the conclusion is false, solely due to its form, to its internal structure, how the premises are related to the conclusion and to each other.
+[446.2s] SPEAKER_04: And then we did a little bit of work looking at some examples.
+[449.2s] SPEAKER_04: So in this argument, I'm trying to decide if this is a valid argument.
+[453.7s] SPEAKER_04: All dogs are mammals.
+[455.0s] SPEAKER_04: All mammals are animals.
+[456.3s] SPEAKER_04: So all dogs are animals.
+[458.2s] SPEAKER_04: I'm tempted to say it is because the premises are true and so is the conclusion.
+[462.5s] SPEAKER_04: But then I remember that doesn't make an argument valid.
+[465.0s] SPEAKER_04: So we've got to be a little bit more careful about this.
+[468.2s] SPEAKER_04: So I start to think about its form.
+[471.0s] SPEAKER_04: And when we talked about the form, we got this idea is you look for the bits that have content.
+[476.0s] SPEAKER_04: that have a kind of a meaning in English, and get rid of them.
+[479.4s] SPEAKER_04: Pull them up.
+[480.1s] SPEAKER_04: and just replace them with a dummy, a pure variable.
+[484.3s] SPEAKER_04: In this case, we're looking for the bits that refer to what we call categories of objects or species or collections of things, and we're replacing those with these dummies, capital letter A, capital letter B, and so on and so on.
+[496.8s] SPEAKER_04: So I systematically replace dog with A in both of its occurrence, mammals with B in both of its occurrence, animals with C in both of its occurrence, and I see that that's the form.
+[507.1s] SPEAKER_04: That's how the premises are related to the conclusion.
+[510.3s] SPEAKER_04: And then I can recognize that there's other arguments that have exactly that same form with different content.
+[517.8s] SPEAKER_04: All toasters are made of gold, all things made of gold are time travel devices, so all toasters are time travel devices.
+[523.8s] SPEAKER_04: Now, if all I had was that powers of imagination method, I'd be like, this one's hard.
+[529.3s] SPEAKER_04: Can I even form a mental picture of all gold things being time travel?
+[534.6s] SPEAKER_04: I'm not even thinking about time travel devices.
+[537.8s] SPEAKER_04: Anyway.
+[540.0s] SPEAKER_04: It's not nearly as easy to do that kind of thing, but the good news is we don't have to.
+[545.2s] SPEAKER_04: If logically valid means formally valid, and formally valid means valid solely as a matter of form, then any two arguments that have the same form must agree on whether they're valid or invalid.
+[559.7s] SPEAKER_04: So both these arguments are either valid or both of these arguments are invalid.
+[564.5s] SPEAKER_04: And now I don't have to look at content, I can just look at that structure and I can start thinking about that.
+[569.5s] SPEAKER_04: Can I conceive of replacements with A's and B's that give me that distribution of true size, true premises, false conclusion?
+[578.5s] SPEAKER_04: We even looked at, I did quickly throw out those Venn diagram things.
+[582.9s] SPEAKER_04: Be careful, Venn diagrams are really limited in what they can actually do.
+[587.4s] SPEAKER_04: They only work for these kinds of categorical arguments.
+[589.9s] SPEAKER_04: These are not arguments that really have a big role to play in truth functional logic.
+[594.5s] SPEAKER_04: They will in first order logic, but we're gonna do better than Venn diagrams.
+[599.1s] SPEAKER_04: But they gave us a way of beginning to think about, if I make the premises true, would that guarantee the conclusion or not?
+[605.8s] SPEAKER_04: And in this case, I do.
+[607.4s] SPEAKER_04: So this is a valid form.
+[609.4s] SPEAKER_04: And so those are both valid arguments.
+[611.7s] SPEAKER_04: And we just move on from that.
+[614.3s] SPEAKER_04: We get exactly the same kind of thing for invalidity.
+[618.3s] SPEAKER_04: So to show that an argument is invalid, it's best to think about its form.
+[624.1s] SPEAKER_04: So in this case, many, many, many people get tripped up on that.
+[628.7s] SPEAKER_04: This is actually a standard example that's used in psych experiments.
+[632.3s] SPEAKER_04: They give you an argument and ask you, do you think it's valid or invalid?
+[635.5s] SPEAKER_04: Humans are really, really bad at these things.
+[638.2s] SPEAKER_04: We invariably get them wrong quite often.
+[640.3s] SPEAKER_04: And this is an argument form we get wrong very often.
+[643.1s] SPEAKER_04: All dogs are mammals.
+[644.2s] SPEAKER_04: Some mammals have fur.
+[646.1s] SPEAKER_04: So some dogs have fur, I want to conclude.
+[649.0s] SPEAKER_04: It's really tempting to think this is a valid argument because we see true premises and a true conclusion.
+[654.6s] SPEAKER_04: And all trues, that's a good thing.
+[656.6s] SPEAKER_04: So it must be a good argument.
+[657.9s] SPEAKER_04: It must be good reasoning.
+[659.6s] SPEAKER_04: But it is not a good reasoning.
+[661.7s] SPEAKER_04: And we can very easily see that.
+[664.1s] SPEAKER_04: We get to the form.
+[666.0s] SPEAKER_04: All A's are B's.
+[667.0s] SPEAKER_04: Some B's are C's.
+[668.3s] SPEAKER_04: So some A's are C's.
+[670.4s] SPEAKER_04: I can think of another argument that's got exactly the same form that pretty clearly leads me from true premises to a false conclusion.
+[679.3s] SPEAKER_04: That is the one distribution of truth value that defines the invalid argument.
+[685.8s] SPEAKER_04: The existence of such a case is what defines an argument to be invalid, and so this argument is invalid.
+[695.0s] SPEAKER_04: And so this form is invalid, and so that argument is invalid.
+[700.3s] SPEAKER_04: and this is a much better method.
+[702.6s] SPEAKER_04: It still does involve a little bit of imagination because I've got to imagine the argument of the same form that has true premise and a false conclusion, but that's a little bit easier.
+[714.1s] SPEAKER_04: The textbook also goes on to describe things like that as counter examples.
+[720.5s] SPEAKER_04: So a counter example to an argument
+[726.2s] SPEAKER_04: is an argument that shows the first argument's invalidity.
+[729.4s] SPEAKER_04: So it's an argument that has clearly true premises and a false conclusion.
+[734.0s] SPEAKER_04: An argument is invalid if and only if it has a counterexample.
+[737.9s] SPEAKER_04: And so the trick is to find the counterexample.
+[740.9s] SPEAKER_04: And we'll come back to counterexamples in a few times as we go along.
+[745.4s] SPEAKER_04: But we wanna actually ultimately get rid of having to think about one argument in terms of other argument, and we just wanna think about their form directly.
+[755.7s] SPEAKER_04: because we should be able to reason just about the form without having to worry about arguments that take that form.
+[763.2s] SPEAKER_04: And to get there, we need to construct our formal language, our logical system that's going to get us to just the pure form.
+[772.6s] SPEAKER_04: So our first task in our law is to develop a logical system that's going to allow us to represent the logical form of, for us, English sentences.
+[785.3s] SPEAKER_04: So I wanna be able to take any English sentence and represent its logical form.
+[790.6s] SPEAKER_04: Get rid of the content and just be left with the logical bits.
+[794.6s] SPEAKER_04: We're gonna see in the textbook does this that when we represent the logical form of an argument, sorry, a sentence, by symbolizing that sentence into the formal logic.
+[807.6s] SPEAKER_04: So that's what we're trying to do here.
+[808.8s] SPEAKER_04: We're trying to learn how to symbolize sentences in English into truth functional logic.
+[814.4s] SPEAKER_04: And when we get some practice at this, that's going to really help us understand what this logic is, what the language itself looks like.
+[822.1s] SPEAKER_04: Now, so far, what we've got are things like this.
+[826.0s] SPEAKER_04: And this is halfway between.
+[827.5s] SPEAKER_04: This is halfway between English and a purely logic formal system.
+[833.8s] SPEAKER_04: It's got some pure dummies in it, variables, A's, B's, C's.
+[839.4s] SPEAKER_04: But it's also got these other bits, all R in this example.
+[844.9s] SPEAKER_04: And these have English content.
+[847.3s] SPEAKER_04: They're still English words.
+[848.9s] SPEAKER_04: So ultimately we want to get rid of even those and just be left with nothing in English left.
+[855.4s] SPEAKER_04: Just the pure representation in the logical system.
+[861.8s] SPEAKER_04: What we're going to get is a sentence in truth functional logic.
+[866.7s] SPEAKER_04: We'll explain why it's called truth functional logic when we get to unit 3, when we get to the semantics of this thing, but that's ultimately our media.
+[874.0s] SPEAKER_04: construct the language that allows us to represent the logical form of any English sentence in a systematic way that gets rid of anything that's English that's in there.
+[887.3s] SPEAKER_04: Yes?
+[887.9s] SPEAKER_02: Could you just do that by defining the symbols that mean specific words and using those?
+[892.7s] SPEAKER_04: You can, but we've got to be careful when we're defining these symbols.
+[895.4s] SPEAKER_04: It's got to do the work that we want it to do.
+[898.1s] SPEAKER_04: So that's why we want to be slow here.
+[901.2s] SPEAKER_04: So let's just jump right into it.
+[903.4s] SPEAKER_04: We start constructing, we start understanding truth-functional logic.
+[907.9s] SPEAKER_04: Truth-functional logic is the kindest, simplest foundation of all logical systems.
+[919.2s] SPEAKER_04: Every other logical system depends upon truth-functional logic in some way.
+[925.0s] SPEAKER_04: Either as an extension from it, and we'll see that in first-order logic,
+[929.1s] SPEAKER_04: Or much later on, if you ever do enough work in logic, there are things called alternative logics or deviant logics.
+[936.2s] SPEAKER_04: And they often involve rejecting some of these claims made in truth functional logic.
+[941.6s] SPEAKER_04: But to understand those, you have to understand what they're unhappy with truth functional logic.
+[946.1s] SPEAKER_04: That's the core.
+[947.1s] SPEAKER_04: This is the most foundation of all logical systems.
+[950.7s] SPEAKER_04: And I would say math.
+[951.9s] SPEAKER_04: Even mathematics is ultimately based upon truth functional logic.
+[957.0s] SPEAKER_04: So the first concept, the most important one, the one that ultimately every other one will make reference to, implicitly at least, is the concept of an atomic sentence.
+[967.4s] SPEAKER_04: So we've already given a restriction to what we mean by a sentence.
+[975.1s] SPEAKER_04: We've restricted what we call sentences to just things that are capable of having truth values.
+[980.6s] SPEAKER_04: So no commands, no questions.
+[982.7s] SPEAKER_04: The only sentences that we have are those that are either true or false.
+[987.2s] SPEAKER_04: They're all declarative sentences.
+[989.6s] SPEAKER_04: But they come in two types.
+[992.4s] SPEAKER_04: Some of them are what we call atomic, and some of them are what we call molecular or complex.
+[999.1s] SPEAKER_04: So here's the definition of an atomic sentence.
+[1001.8s] SPEAKER_04: A sentence is atomic.
+[1003.6s] SPEAKER_04: only if it cannot be broken down into any simpler sentence.
+[1010.1s] SPEAKER_04: So in English, you can take a sentence and break it down.
+[1014.8s] SPEAKER_04: Every sentence is made up of words, at least two words, at least a noun and a verb, and it's capable of having the truth value.
+[1021.2s] SPEAKER_04: But words are not sentences.
+[1023.3s] SPEAKER_04: Words do not make claims.
+[1025.2s] SPEAKER_04: It's only when you put them together in the right kind of way.
+[1028.6s] SPEAKER_04: Some sentences you can only break down into words, nothing simpler.
+[1033.2s] SPEAKER_04: But some sentences you can break down into simpler components.
+[1038.4s] SPEAKER_04: So here, Romeo loves Juliet and Rosalie.
+[1042.2s] SPEAKER_04: From an English grammatical point of view, that's just one sentence.
+[1046.4s] SPEAKER_04: But it's a complex sentence.
+[1047.9s] SPEAKER_04: It contains as a component the simpler sentence, Romeo loves Juliet.
+[1058.0s] SPEAKER_04: And Romeo loves Roslin.
+[1067.1s] SPEAKER_04: And I should understand this English sentence, the complex or molecular one, as being put together from these two atomic sentences using this conjunction, the and.
+[1080.7s] SPEAKER_04: So it would be more helpful maybe to paraphrase that, put it in a slightly longer form, and think about this sentence as saying, it's both the case that Romeo loved Juliet and Romeo loved Rosalind.
+[1094.5s] SPEAKER_04: So that sentence is formed by putting an and between those two simple or atomic components.
+[1102.0s] SPEAKER_04: Romeo loves Juliet, but not Rosalind.
+[1105.4s] SPEAKER_04: So what are the atomic components involved in that?
+[1109.1s] SPEAKER_04: they're exactly the same, the same two atomic components.
+[1114.1s] SPEAKER_04: There's this additional but there, and there's this not going on here.
+[1121.7s] SPEAKER_04: A fuller paraphrase would be something like recognizing that but is very, very similar if not the same thing as and in most cases.
+[1131.7s] SPEAKER_04: Then you should read that as it's both the case that Romeo loves Juliet
+[1136.9s] SPEAKER_04: And it is not the case that Romeo loves Rosalind.
+[1142.6s] SPEAKER_04: Romeo loves Juliet is already recognized as an atomic sentence, but Romeo does not love Rosalind should be recognized as sticking the negation on the front of, or in this case, inside of the atomic sentence, Romeo loves Rosalind.
+[1160.6s] SPEAKER_04: So two atomic components, but in this case there are two things, additional devices that we're going to call connectives that are used to form the more complex sentence.
+[1171.9s] SPEAKER_04: And it's the particular way that those two atomic sentences and the combination of those connectives are put together that allows us to understand the logical form of the original sentence.
+[1184.2s] SPEAKER_04: Romeo loves Juliet just in case he doesn't love Rosalind.
+[1188.7s] SPEAKER_04: Exactly the same atomic sentences.
+[1191.2s] SPEAKER_04: In this case, we see a connective, just in case, and we see another unt in there, which is an English way of expressing the same thing as not.
+[1202.2s] SPEAKER_04: It is not the case that.
+[1204.6s] SPEAKER_04: So we would get Romeo loves Juliet, just in case it is not the case that Romeo loves Rosalind.
+[1213.0s] SPEAKER_04: And how do we usually or more commonly express just in case in English?
+[1218.5s] SPEAKER_04: Remember this in the textbook.
+[1220.7s] SPEAKER_04: That's the if and only if of English.
+[1224.1s] SPEAKER_04: So we're getting there.
+[1225.0s] SPEAKER_04: We're identifying the atomic components, and ultimately we're going to have to find some way of representing them.
+[1230.3s] SPEAKER_04: And then we're going to have to figure out some way of representing these connectives, and we'll be able to put all of that together.
+[1236.2s] SPEAKER_04: So let's up the ante a little bit.
+[1237.6s] SPEAKER_04: What are the atomic sentences in the following?
+[1240.7s] SPEAKER_04: Today is Thursday, and I'm going to the movie tonight if it doesn't rain.
+[1244.8s] SPEAKER_02: Today is Thursday, obviously.
+[1247.6s] SPEAKER_02: Did I say today's Thursday?
+[1249.7s] SPEAKER_02: That's the atomic sentence.
+[1250.6s] SPEAKER_04: Oh, that's the atomic sentence.
+[1252.4s] SPEAKER_04: Today is Thursday.
+[1254.0s] SPEAKER_04: That's definitely an atomic sentence.
+[1257.0s] SPEAKER_02: Thursday.
+[1257.6s] SPEAKER_02: What was the other one?
+[1259.7s] SPEAKER_02: I'm going to the movie if it doesn't rain.
+[1262.2s] SPEAKER_02: Nope.
+[1265.9s] SPEAKER_04: So the suggestion was, I'm going to the movie if it doesn't rain.
+[1269.0s] SPEAKER_04: I said, nope.
+[1270.6s] SPEAKER_04: Yeah, go ahead.
+[1272.0s] SPEAKER_06: I'm going to the movie tonight, and then it doesn't rain will mean another.
+[1277.8s] SPEAKER_04: Good.
+[1280.1s] SPEAKER_04: Those are the three autonomous sentences.
+[1282.9s] SPEAKER_04: Oh, actually, no.
+[1283.9s] SPEAKER_04: I like this one.
+[1284.6s] SPEAKER_04: Good job on that.
+[1285.8s] SPEAKER_04: Can you see why?
+[1286.5s] SPEAKER_04: That's a separate sentence.
+[1288.8s] SPEAKER_04: If you take, I'm going to the movie tonight, if it doesn't rain, that's broken down into I'm going to the movie tonight, and it doesn't rain with the connection of the if film.
+[1298.2s] SPEAKER_04: So I like this one.
+[1299.3s] SPEAKER_04: Good job on that.
+[1300.4s] SPEAKER_04: I don't like that one.
+[1305.0s] SPEAKER_04: Because that can be broken down in something simpler.
+[1308.0s] SPEAKER_01: It rains.
+[1311.3s] SPEAKER_04: Why don't I like this as one of the atomic components?
+[1315.4s] SPEAKER_01: It should be if and only if it doesn't rain.
+[1318.3s] SPEAKER_04: It rains?
+[1319.4s] SPEAKER_04: It rains.
+[1321.3s] SPEAKER_04: There's a singular sentence embedded in it does not rain.
+[1324.9s] SPEAKER_04: Mainly it rains.
+[1326.4s] SPEAKER_04: To say it does not rain is to deny that it rains.
+[1330.3s] SPEAKER_04: Or to say of it rains that it's false.
+[1333.7s] SPEAKER_04: That's exactly what we had up here.
+[1335.6s] SPEAKER_04: Romeo doesn't love Rosalind.
+[1337.6s] SPEAKER_04: That's the negation or the denial of Romeo loves Roslyn.
+[1343.0s] SPEAKER_04: So no atomic sentence should have a not in there.
+[1347.3s] SPEAKER_04: Because as soon as you got a not, there's a simpler sentence.
+[1349.9s] SPEAKER_04: The one you get by removing the not.
+[1351.8s] SPEAKER_04: No atomic sentence should have an if in there.
+[1355.1s] SPEAKER_04: Because an if combines two other sentences to form the if then.
+[1359.6s] SPEAKER_04: No atomic sentence should contain an and in it.
+[1363.4s] SPEAKER_04: Because that's the device for forming a compound sentence.
+[1366.2s] SPEAKER_04: from simpler components.
+[1368.0s] SPEAKER_04: So that can't be in there.
+[1369.6s] SPEAKER_04: In this case, that would be the three atomic sentences.
+[1373.1s] SPEAKER_04: I'm glad you said this, I'm going to the movie tonight.
+[1375.1s] SPEAKER_04: My first section, this was suggested, I'm going to the movie.
+[1379.3s] SPEAKER_04: But that's not the atomic sentence that was set originally.
+[1383.0s] SPEAKER_04: The claim I'm going to the movie and I'm going to the movie tonight are different claims.
+[1387.2s] SPEAKER_04: They're stating different things.
+[1389.0s] SPEAKER_04: They can have different truth values.
+[1390.6s] SPEAKER_04: They're not the same thing at all.
+[1392.3s] SPEAKER_04: So when you're pulling out the atomic sentences, you want to be faithful to what you were given.
+[1397.6s] SPEAKER_04: You want to represent or capture all what was said.
+[1400.8s] SPEAKER_04: But you don't want to capture too much.
+[1402.1s] SPEAKER_04: You don't want to put in things that weren't there.
+[1405.2s] SPEAKER_04: Finally, what about this one?
+[1406.0s] SPEAKER_04: How many atomic sentences do you think are inside or embedded in this sentence?
+[1414.1s] SPEAKER_04: Over three?
+[1416.4s] SPEAKER_04: I don't think over three.
+[1418.7s] SPEAKER_04: Three?
+[1419.5s] SPEAKER_04: I think exactly three.
+[1422.5s] SPEAKER_04: Yeah.
+[1422.7s] SPEAKER_04: That's exactly three.
+[1424.9s] SPEAKER_04: Jupiter is bigger than Mars.
+[1426.9s] SPEAKER_01: Saturn is bigger than Mars.
+[1429.6s] SPEAKER_01: Saturn is not bigger than Jupiter.
+[1431.6s] SPEAKER_01: Saturn is bigger than Jupiter.
+[1433.6s] SPEAKER_01: Saturn is bigger than Jupiter.
+[1435.5s] SPEAKER_04: Since we get that knot in there, it's molecular.
+[1438.9s] SPEAKER_04: So the three atomic sentences, Jupiter is bigger than Mars, Saturn is bigger than Mars, Saturn is bigger than Jupiter.
+[1446.6s] SPEAKER_04: Good.
+[1448.2s] SPEAKER_04: You pull that one for me.
+[1581.3s] SPEAKER_03: Okay.
+[1583.1s] SPEAKER_03: Who got five?
+[1585.3s] SPEAKER_04: Good.
+[1587.5s] SPEAKER_03: Who got six?
+[1589.8s] SPEAKER_04: Good.
+[1590.5s] SPEAKER_04: Who got four?
+[1592.8s] SPEAKER_04: Ooh, that's good.
+[1597.3s] SPEAKER_04: They're exactly three.
+[1597.8s] SPEAKER_04: Yes!
+[1597.9s] SPEAKER_04: I'll post the solutions sometime tomorrow.
+[1602.2s] SPEAKER_04: Okay, so that's the first stage in symbolizing.
+[1606.0s] SPEAKER_04: You gotta pull out all of the atomic sentences.
+[1615.6s] SPEAKER_04: all those, get rid of anything that's connected, that's used to form a more complex sentence from the simpler sentence.
+[1624.8s] SPEAKER_04: Okay, then you can start symbolizing.
+[1627.3s] SPEAKER_04: Two steps in symbolizing.
+[1629.1s] SPEAKER_04: The first step is to construct what we call a symbolization key.
+[1633.7s] SPEAKER_04: Now, all the symbolization key that's defined there, all that it is, is it's just a pairing, a one-to-one correspondence between an atomic sentence in English,
+[1646.6s] SPEAKER_04: from what you're trying to symbolize, and a sentence letter.
+[1651.3s] SPEAKER_04: And we define a sentence letter as a symbol in true functional logic, and the symbol, the range of symbols that we're going to use for that are just capital letters, capital language letters.
+[1665.5s] SPEAKER_04: Capital A, capital B, capital C, so on, and so on, and so on.
+[1670.0s] SPEAKER_04: Now, a couple things.
+[1670.5s] SPEAKER_04: When we looked at arguments like all As are Bs, all Bs are Cs, all Cs are Ds,
+[1675.5s] SPEAKER_04: There it looked as if they're sentence letters, because we used capital letters for those, but those were not sentence letters.
+[1681.8s] SPEAKER_04: There, in those kinds of arguments, they represented categories or classes of things.
+[1686.8s] SPEAKER_04: Here, a sentence letter stands for, symbolizes an atomic sentence, something that has a truth value.
+[1694.1s] SPEAKER_04: So I say all dogs are mammals, all A's are B's.
+[1700.8s] SPEAKER_04: Dog is not a sentence.
+[1702.9s] SPEAKER_04: It doesn't have a truth value.
+[1704.9s] SPEAKER_04: But if I say, if something's a dog, then it's a mammal, well, something is a dog is a sentence.
+[1712.5s] SPEAKER_04: It has a truth value.
+[1715.9s] SPEAKER_04: Now, here's a problem.
+[1717.6s] SPEAKER_04: How many atomic sentences are there in English?
+[1720.9s] SPEAKER_04: There's an infinite number of them.
+[1722.3s] SPEAKER_04: There's no stopping.
+[1723.3s] SPEAKER_04: We can construct as many of them as we possibly want.
+[1727.2s] SPEAKER_04: How many sentence letters are there in truth functional logic?
+[1730.4s] SPEAKER_04: Well, it looks like 26.
+[1732.3s] SPEAKER_04: And that's a bit of a problem.
+[1733.9s] SPEAKER_04: So if we ever need more than 26, we never will.
+[1737.4s] SPEAKER_04: But we can if we ever want to just start introducing these whole number subscripts there.
+[1743.3s] SPEAKER_04: And those all count as sentence letters as well.
+[1746.2s] SPEAKER_04: So A sub one, B sub two sentence letters.
+[1750.0s] SPEAKER_02: So if you run out of letters, would you go A sub 1, B sub 1, or A sub 1, A sub 2?
+[1756.5s] SPEAKER_04: You decide.
+[1757.6s] SPEAKER_04: That's one great thing.
+[1758.4s] SPEAKER_04: So with the symbolization key, they're going to come into play in one of two different ways.
+[1764.8s] SPEAKER_04: Either you're going to be given a symbolization key, and then you have to be faithful to the one you're given, or you're going to be allowed to construct your own.
+[1772.4s] SPEAKER_04: And if you're allowed to construct your own, you decide if you want to go to A sub 1 or A sub 27 or whatever you want.
+[1780.1s] SPEAKER_04: It's entirely up to you how you want to do that.
+[1784.1s] SPEAKER_04: So that's what a sentence letter does.
+[1785.6s] SPEAKER_04: It symbolizes the, or that's what the symbolization key does.
+[1789.2s] SPEAKER_04: It symbolizes the atomic sentences by assigning each of them a sentence letter.
+[1795.2s] SPEAKER_04: Now here's the one restriction.
+[1797.2s] SPEAKER_04: Every unique atomic sentence in the symbolization key has to be assigned a unique sentence letter.
+[1804.9s] SPEAKER_04: So you can't assign capital A to one sentence and the same capital letter A to a completely different sentence because then that sentence would be ambiguous.
+[1814.3s] SPEAKER_04: You wouldn't know how to interpret it.
+[1816.6s] SPEAKER_04: So that's the one caveat there.
+[1818.8s] SPEAKER_04: So here's just a few examples.
+[1820.9s] SPEAKER_04: Within that caveat, you've got all kinds of ways to do it.
+[1824.8s] SPEAKER_04: So the example we started with before, we recognized that there were three atomic sentences there.
+[1829.7s] SPEAKER_04: Jupiter's bigger than Mars, Saturn is bigger than Mars, Saturn is bigger than Jupiter, and you can construct your symbolization key however you want.
+[1837.3s] SPEAKER_04: Here's one perfectly good way of doing it.
+[1840.1s] SPEAKER_04: And this is probably the most common standard way in logic textbooks.
+[1844.1s] SPEAKER_04: It helps you kind of remember what's going on, what your symbolizations are doing, especially as they get bigger and bigger and bigger.
+[1850.8s] SPEAKER_04: Find some key word in the sentence.
+[1853.4s] SPEAKER_04: Use the first letter in catalogs.
+[1855.5s] SPEAKER_04: So capital J for Jupiter is larger than Mars.
+[1858.6s] SPEAKER_04: I'll pick capital S for Saturn is bigger than Mars.
+[1861.6s] SPEAKER_04: I could have picked capital S, but I was intending to assign that to Saturn is bigger than Jupiter, so I'd have to pick something other than S for that second one.
+[1871.2s] SPEAKER_04: That's perfectly fine.
+[1872.5s] SPEAKER_04: Probably the second most common way to do it is just start with A, go to B, go to C, go to D, however many you need here.
+[1880.2s] SPEAKER_04: If you got 26, so if you got 27, then your 27th would be A sub 1.
+[1886.7s] SPEAKER_04: We're never going to give you that many.
+[1890.2s] SPEAKER_04: The most I'm ever going to give you are maybe, I don't know, eight or nine atomic sentences, and that's enough.
+[1896.6s] SPEAKER_04: But you can carry on.
+[1897.9s] SPEAKER_04: You have to keep doing this.
+[1899.5s] SPEAKER_04: And this one's perfectly fine as well.
+[1901.8s] SPEAKER_04: Just use the same capital letter and just use different subscripts all the way through.
+[1907.3s] SPEAKER_04: I just did a number of years ago.
+[1909.5s] SPEAKER_04: I can't really, really like this.
+[1911.4s] SPEAKER_04: At the beginning, I wanted to, I was a little bit annoyed.
+[1913.7s] SPEAKER_04: Because they use the same sentence letter
+[1916.6s] SPEAKER_04: the whole term just with different subscripts.
+[1920.7s] SPEAKER_04: Because when you had eight or nine different atomic sentences in there, I had to work my way through it.
+[1926.9s] SPEAKER_04: But then I really started to appreciate the tenacity and the wicked humor of this kind of stuff.
+[1931.6s] SPEAKER_04: I thought it was great.
+[1932.9s] SPEAKER_04: I wouldn't recommend doing it though.
+[1934.4s] SPEAKER_04: Find whichever system works for you, whichever helps you remember best as we go along.
+[1939.8s] SPEAKER_04: So that's the only restriction.
+[1940.8s] SPEAKER_04: Every unique atomic sentence has to be assigned a unique sentence letter.
+[1945.9s] SPEAKER_04: Now,
+[1947.6s] SPEAKER_04: When we construct the symbolization key, what we're doing is symbolizing the atomic sentences.
+[1953.3s] SPEAKER_04: And as we said earlier, the symbolization of a sentence represents its logical form.
+[1959.9s] SPEAKER_04: So a symbolization key also represents the logical form of all of these atomic sentences we want to work with.
+[1966.1s] SPEAKER_04: They all have something in common.
+[1967.4s] SPEAKER_04: They're all atomic sentences.
+[1969.0s] SPEAKER_04: And so we can just use the same type of symbol to represent all of them.
+[1975.8s] UNK: Okay.
+[1977.0s] SPEAKER_04: Is this an acceptable symbolization key, do you think?
+[1980.3s] SPEAKER_04: I'm going to assign A to Michael Buble as Canadian, B to Ted Cruz, who was born in Calgary, although he's American, and C to Celine Dion, who was born in Quebec.
+[1989.1s] SPEAKER_04: Is that okay?
+[1990.7s] SPEAKER_02: Why not?
+[1992.3s] SPEAKER_04: The last two aren't atomic sentences.
+[1994.3s] SPEAKER_04: They're not atomic sentences.
+[1996.6s] SPEAKER_04: So that violates what a symbolization key is.
+[1999.5s] SPEAKER_04: First one, no problem at all.
+[2001.1s] SPEAKER_04: Why isn't that second one an atomic sentence?
+[2003.5s] SPEAKER_04: Although...
+[2004.8s] SPEAKER_04: Although that looks like so, it's not atomic if it contains atomic sentences as components.
+[2011.1s] SPEAKER_04: So what are the atomic components?
+[2013.6s] SPEAKER_04: Ted Cruz was born in Calgary, and Ted Cruz is American.
+[2016.9s] SPEAKER_04: Good, yeah?
+[2018.1s] SPEAKER_06: And in C, the word so is used.
+[2023.0s] SPEAKER_04: You're right, there's something suspicious about so here.
+[2025.6s] SPEAKER_04: But so is not like a lo.
+[2028.3s] SPEAKER_04: Is this an atomic or a molecular sentence?
+[2032.3s] SPEAKER_04: It's neither.
+[2033.2s] SPEAKER_04: It's argument, isn't it?
+[2034.3s] SPEAKER_04: It's not a sentence.
+[2037.4s] SPEAKER_04: Not a sentence from a logical point of view.
+[2039.5s] SPEAKER_04: What is the so signifying here?
+[2041.4s] SPEAKER_04: It's an argument?
+[2042.4s] SPEAKER_04: Yeah, it's an argument.
+[2043.4s] SPEAKER_04: The so is a conclusion indicator.
+[2046.1s] SPEAKER_04: It's like the three dots in a triangle.
+[2048.6s] SPEAKER_04: This is an argument.
+[2050.3s] SPEAKER_04: And what is an argument?
+[2051.4s] SPEAKER_04: An argument involves two things, one of which is a set of sentences called the premises, the other of which is a conclusion, a single sentence.
+[2059.4s] SPEAKER_04: This is actually this argument, a premise that only contains one member, Celine Dion was born in Canada, therefore Celine Dion is Canadian.
+[2069.4s] SPEAKER_04: And the point of a symbolization key is so ultimately we can symbolize arguments.
+[2074.8s] SPEAKER_04: So you can't build the argument into the symbolization key.
+[2078.8s] SPEAKER_04: And I did this one on purpose because just because there's simpler sentences in there, it doesn't immediately follow that the bigger thing is a molecular sentence.
+[2087.4s] SPEAKER_04: It might be an argument.
+[2088.4s] SPEAKER_04: It might be a set of sentences.
+[2089.4s] SPEAKER_04: It might be something else.
+[2090.7s] SPEAKER_04: So we've got to be careful in how we deal with these things.
+[2093.7s] SPEAKER_04: What about this one?
+[2094.6s] SPEAKER_04: Okay, not okay?
+[2096.6s] SPEAKER_04: A, A sub one, A sub two, A sub three.
+[2099.3s] SPEAKER_04: Helium is lighter than hydrogen.
+[2101.5s] SPEAKER_04: Hydrogen is lighter than helium.
+[2102.7s] SPEAKER_04: Helium is lighter than hydrogen.
+[2104.2s] SPEAKER_04: Water is a combination of oxygen and hydrogen.
+[2106.6s] SPEAKER_04: Oxygen has the lowest atomic number.
+[2108.6s] SPEAKER_04: Yeah.
+[2109.5s] SPEAKER_06: It's not atomic.
+[2111.3s] SPEAKER_04: Which?
+[2112.4s] SPEAKER_06: Either of them.
+[2113.9s] SPEAKER_06: Only A3A.
+[2115.2s] SPEAKER_01: I was going to say that it's fine because it's saying that water is a combination of oxygen and hydrogen.
+[2128.7s] SPEAKER_01: So I've heard two different things going on here, two different claims.
+[2141.2s] SPEAKER_04: The first claim, I think that was coming from over here, was this is not atomic because it contains a simpler sentence as a component.
+[2149.8s] SPEAKER_04: If that's the case, what is that simpler sentence?
+[2154.1s] SPEAKER_04: That's not a sentence.
+[2155.5s] SPEAKER_04: That's not a sentence in English.
+[2157.1s] SPEAKER_04: is lighter is a relation.
+[2159.5s] SPEAKER_04: Something can be lighter than something else, but nothing can be lighter.
+[2164.7s] SPEAKER_04: Something can be light, but you can't be lighter, period.
+[2168.4s] SPEAKER_04: You have to be lighter than something.
+[2170.9s] SPEAKER_04: So this is an atomic sense.
+[2173.0s] SPEAKER_04: Helium is lighter than hydrogen.
+[2176.7s] SPEAKER_04: And so is that one, helium is lighter than hydrogen.
+[2179.8s] SPEAKER_04: In fact, if you say hydrogen is light,
+[2183.9s] SPEAKER_04: That's only a sentence by courtesy.
+[2185.5s] SPEAKER_04: It actually is expressing a more complex sentence.
+[2188.5s] SPEAKER_04: It's just a shorthand way of saying hydrogen is lighter than, and then there's an assumed comparator going on there.
+[2196.5s] SPEAKER_04: The other thing was combination.
+[2197.4s] SPEAKER_04: I think this is just right.
+[2198.7s] SPEAKER_04: Because you might be tempted to think, well, that's a conjunction.
+[2202.7s] SPEAKER_04: Because look, we got this and in there.
+[2205.3s] SPEAKER_04: And it's kind of like some of these other cases we looked at.
+[2208.4s] SPEAKER_04: But this is not a connective.
+[2211.1s] SPEAKER_04: Because otherwise, you'd have to say water is a combination of hydrogen.
+[2214.4s] SPEAKER_04: And water is a combination of oxygen and water is a combination of hydrogen.
+[2222.4s] SPEAKER_04: That's not what that says.
+[2224.4s] SPEAKER_04: Water is not a combination of oxygen.
+[2226.1s] SPEAKER_04: That's not an English sentence.
+[2227.8s] SPEAKER_04: You can't be a combination of just one thing.
+[2230.6s] SPEAKER_04: That's the nature of combinations in English.
+[2233.6s] SPEAKER_04: So this is fine.
+[2235.7s] SPEAKER_04: These are all atomic sentences.
+[2237.5s] SPEAKER_04: And this is a perfectly acceptable symbolization key.
+[2240.4s] SPEAKER_02: It's not a set of sentences, though, because some of them contradict each other.
+[2243.3s] SPEAKER_04: I'm not dealing this as a set of sentences.
+[2245.5s] SPEAKER_04: I'm dealing with this as a symbolization key, which is a list of sentences.
+[2249.2s] SPEAKER_04: A list is different than a set.
+[2252.1s] SPEAKER_04: A set has membership.
+[2253.5s] SPEAKER_04: A set has one of two properties, either jointly possible or jointly impossible.
+[2257.8s] SPEAKER_04: I'm not looking at it like that.
+[2259.2s] SPEAKER_04: I'm looking at it as a list of individual sentences, and the relevance of such a list is it gives me the way of understanding the logical form of the atomic sentences.
+[2270.0s] SPEAKER_04: Playing a different role altogether.
+[2271.1s] SPEAKER_04: This is not a logical structure that we define logical properties of in chapter four.
+[2277.4s] SPEAKER_04: This is being introduced in chapter five to play that role.
+[2282.6s] SPEAKER_00: Yeah?
+[2282.8s] SPEAKER_00: Could you hypothetically do just water is oxygen and hydrogen, though?
+[2289.1s] SPEAKER_04: Water is hydrogen and oxygen?
+[2290.9s] SPEAKER_00: Yeah.
+[2294.1s] SPEAKER_04: And do you intend that to be a different sentence than water is a combination of oxygen and hydrogen?
+[2299.4s] SPEAKER_04: Or just two different ways of saying the same thing?
+[2301.2s] SPEAKER_00: Well, is it, in my mind, I was like, if it can be made simpler, then does it mean that it's not an atomic sentence?
+[2310.3s] SPEAKER_04: I don't, I would, I see the point you're trying to make.
+[2313.9s] SPEAKER_04: Okay.
+[2314.3s] SPEAKER_04: My response would be, well, these are, in fact, just equivalent sentences.
+[2318.2s] SPEAKER_04: You're just saying the same thing with fewer words, but that's what you're saying.
+[2322.2s] SPEAKER_04: And so it's not two different sentences.
+[2324.2s] SPEAKER_04: So this is not a simpler sentence that's embedded into that one.
+[2328.8s] SPEAKER_04: It's just a simpler way of saying the same simple sentence.
+[2332.2s] SPEAKER_04: Right?
+[2333.4s] SPEAKER_04: And sometimes we do that.
+[2334.6s] SPEAKER_04: Like, I can say, go.
+[2336.9s] SPEAKER_04: And by that, I mean you go.
+[2338.6s] SPEAKER_04: But you go and go are expressing the same thought.
+[2342.1s] SPEAKER_04: There's a bit of a problem when we're dealing with natural languages, the ambiguity of those things.
+[2346.6s] SPEAKER_04: Also, the context usually makes clear, and in these logic examples, there is no context.
+[2350.7s] SPEAKER_04: We're kind of flying by the seat of our pants.
+[2353.9s] SPEAKER_06: Yeah.
+[2354.5s] SPEAKER_06: Two separate sentences, like water contains oxygen, water contains hydrogen.
+[2356.9s] SPEAKER_06: Okay, good.
+[2359.4s] SPEAKER_04: That is a perfectly good sentence.
+[2360.6s] SPEAKER_04: Water contains oxygen.
+[2364.7s] SPEAKER_04: Water contains hydrogen.
+[2371.3s] SPEAKER_04: So then your claim is that this is complex because it combines those two.
+[2377.7s] SPEAKER_04: What does it combine them with, with an and?
+[2382.0s] SPEAKER_04: I don't think so, because I think this is saying more.
+[2387.0s] SPEAKER_04: I'm saying more than just it's got these two components.
+[2392.3s] SPEAKER_04: I'm saying there's a bond between those components in a way that makes water.
+[2396.7s] SPEAKER_04: So water is not just H2 and O.
+[2400.8s] SPEAKER_04: Water is H2O, right?
+[2402.2s] SPEAKER_04: Going back to that kind of chemical thing.
+[2404.3s] SPEAKER_04: I know I might be explaining chemistry and laws of physics, but I think that's part of the English sentence.
+[2409.6s] SPEAKER_04: I think from our point of view, that's as bad rock as we can go.
+[2413.5s] SPEAKER_04: That's a single sentence.
+[2415.2s] SPEAKER_02: You could have both gases in a bottle without it being water.
+[2418.4s] SPEAKER_01: Yeah, right.
+[2420.3s] SPEAKER_01: Would it also be...
+[2426.3s] SPEAKER_01: that simply saying water contains oxygen and water contains hydrogen isn't sufficient?
+[2432.8s] SPEAKER_04: Yeah, because combination is more than contains.
+[2436.4s] SPEAKER_01: Yeah, because combination would say that it only has oxygen and hydrogen, but contains would kind of give the idea of it having potentially other things as well.
+[2451.4s] SPEAKER_04: Yeah, and I think that's definitely the case in, we use this term in
+[2454.7s] SPEAKER_04: in chemistry, and I think it carries on in English, there's a similarity, there's a relationship between the concept of containing and the concept of being a combination.
+[2464.1s] SPEAKER_04: But there are different concepts.
+[2465.6s] SPEAKER_04: The one we're talking about here is a combination.
+[2467.2s] SPEAKER_04: And I think chemistry is nice of that because it's got this idea of a bond.
+[2470.6s] SPEAKER_04: It's just not these two elements side by side.
+[2473.1s] SPEAKER_04: They are bonded in some kind of way.
+[2475.1s] SPEAKER_04: They form a unit.
+[2476.3s] SPEAKER_04: And that's what we're trying to capture.
+[2478.1s] SPEAKER_04: Well, I've never spent this much time on this example.
+[2480.2s] SPEAKER_04: This is stretching really good in this case.
+[2483.1s] SPEAKER_04: What about this one?
+[2484.2s] SPEAKER_04: Is that okay?
+[2488.8s] SPEAKER_06: Oh, you want to say Romeo hates Juliet is just not Romeo loves Juliet.
+[2506.7s] SPEAKER_04: Nice.
+[2507.7s] SPEAKER_04: Is that the case?
+[2509.6s] SPEAKER_04: Is hate the opposite of love?
+[2513.9s] SPEAKER_04: The negation of love?
+[2514.9s] SPEAKER_04: I don't think so.
+[2516.2s] SPEAKER_04: I don't love this water bottle, but I don't hate it.
+[2519.3s] SPEAKER_04: That's a different kind of case.
+[2521.9s] SPEAKER_04: If the sentence was Romeo, it's not the case that Romeo loves Julia, or Romeo doesn't love Julia, then it shouldn't be there anyway, because then it's not atomic.
+[2530.7s] SPEAKER_04: Yeah, there's the problem.
+[2535.2s] SPEAKER_04: I'm trying to use exactly the same sentence letter to symbolize two very, very different sentences.
+[2540.2s] SPEAKER_04: So that is not okay.
+[2542.3s] SPEAKER_04: This would be fine.
+[2543.4s] SPEAKER_04: I didn't want to rewrite things, put a subscript to that.
+[2547.6s] SPEAKER_06: Yeah?
+[2551.7s] SPEAKER_04: Well, that was the question here.
+[2553.6s] SPEAKER_04: I do not think that Romeo hates Juliet is the negation of Romeo loves Juliet.
+[2559.0s] SPEAKER_04: I think those are just completely different claims.
+[2561.9s] SPEAKER_04: Because you can neither hate nor love something.
+[2564.6s] SPEAKER_04: You can be undevident towards it.
+[2566.7s] SPEAKER_04: So they're not opposites.
+[2569.4s] SPEAKER_04: A negation denies something, says of it that it's false.
+[2575.1s] SPEAKER_04: You know, I can think that it's not the case that Romeo loves Juliet.
+[2578.4s] SPEAKER_04: Maybe it's that part of the play where he hasn't even seen Juliet yet, but he doesn't hate her, right?
+[2583.0s] SPEAKER_04: So those are different things at this point.
+[2585.4s] SPEAKER_04: So this will get clear, especially in unit four or three when we get to the meaning of not, the semantics of these things and how they come into play.
+[2593.7s] SPEAKER_04: Okay, good.
+[2594.5s] SPEAKER_04: So give me the symbolization.
+[2601.4s] SPEAKER_03: The maid either had an alibi or both she and them are late for dinner.
+[2606.9s] SPEAKER_03: The cook was not big for dinner.
+[2686.1s] SPEAKER_04: Taking another chance in 2016.
+[2747.4s] SPEAKER_04: I know I didn't ask you this, but is your intuition that this thing is valid or invalid?
+[2758.1s] SPEAKER_04: Valid?
+[2758.2s] SPEAKER_04: Valid?
+[2758.8s] SPEAKER_04: Valid?
+[2759.9s] SPEAKER_04: You think it's valid?
+[2761.7s] SPEAKER_04: You think it's invalid?
+[2763.1s] SPEAKER_04: You're wrong.
+[2764.6s] SPEAKER_05: It's not an argument.
+[2768.2s] SPEAKER_02: There's no conclusion, is there?
+[2769.8s] SPEAKER_02: There's no conclusion.
+[2771.6s] SPEAKER_02: What is it?
+[2776.1s] SPEAKER_04: What logical property could it have then?
+[2779.3s] SPEAKER_04: Mutually impossible or possible?
+[2781.1s] SPEAKER_04: It's either jointly possible or jointly impossible.
+[2783.8s] SPEAKER_04: I think we also introduced the term, or the textbook does, consistent or inconsistent.
+[2788.7s] SPEAKER_04: You can use that too, it's fine.
+[2790.0s] SPEAKER_04: Yeah.
+[2792.3s] SPEAKER_04: Again, don't forget all the other stuff that's led up to this point.
+[2796.6s] SPEAKER_04: One last thing, who got this one?
+[2799.4s] SPEAKER_04: The maid helped.
+[2806.1s] SPEAKER_04: Most of you, okay.
+[2807.9s] SPEAKER_02: Well, you're partly right.
+[2809.4s] SPEAKER_02: Well, the proper sentence would be the maid helped kill the cook.
+[2812.3s] SPEAKER_04: The maid helped kill the cook.
+[2814.5s] SPEAKER_04: Partly right.
+[2817.8s] SPEAKER_01: Yeah?
+[2818.7s] SPEAKER_01: The maid helped kill the cook with the butler.
+[2824.6s] SPEAKER_04: Yeah, I think the maid helped the butler.
+[2832.7s] SPEAKER_04: Yeah, that's it's bringing awkward English.
+[2837.6s] SPEAKER_04: This is an English class.
+[2839.0s] SPEAKER_04: I'd be fine with that.
+[2840.6s] SPEAKER_04: But I just have my high school, middle school grammar teacher telling me, no, you've got to put the object here, blah, blah, blah.
+[2847.5s] SPEAKER_04: But I think you both those things, and that's going to be part of the one to say.
+[2851.4s] SPEAKER_04: Yeah?
+[2851.8s] SPEAKER_04: What about the made ?
+[2855.1s] SPEAKER_04: Well, I think that's implied with Gilbert Cook.
+[2858.4s] SPEAKER_04: Because it doesn't actually say she's the murderer.
+[2860.8s] SPEAKER_04: She didn't help him murder.
+[2862.0s] SPEAKER_04: She helped him be the murderer.
+[2864.3s] SPEAKER_04: And those could be different things.
+[2865.2s] SPEAKER_04: I see your point.
+[2866.2s] SPEAKER_04: I don't want to get too nuanced on this.
+[2868.3s] SPEAKER_04: All I wanted to kind of point out that this is only part of it.
+[2873.1s] SPEAKER_04: And I hope you see it yet.
+[2873.9s] SPEAKER_04: No, we actually need all of it.
+[2876.1s] SPEAKER_04: That's the sentence being expressed there.
+[2878.7s] SPEAKER_04: That's the atomic sentence going in there.
+[2881.0s] SPEAKER_04: So you want to capture what was originally said.
+[2884.9s] SPEAKER_01: and unambiguously.
+[2896.1s] SPEAKER_04: You could, but again, I got my middle school grammar teacher saying, well, in this sentence, because what the maid helped with has to be as closely connected to the action described there, it's got to be helped in the murder, all that kind of stuff.
+[2912.2s] SPEAKER_04: If you gave me just the maid helped, I'd give you part marks on that.
+[2915.8s] SPEAKER_04: If you gave me the maid helped the butler, I'd give you more marks on that, and I'd give you full marks for the maid helped the butler kill the cook.
+[2922.6s] SPEAKER_02: What if you dropped the butler out of this?
+[2924.5s] SPEAKER_04: Then I'd give the part marks for that, because you got some of it.
+[2927.6s] SPEAKER_04: She helped kill the cook, but that wasn't it.
+[2929.7s] SPEAKER_04: She helped the butler kill the cook.
+[2931.5s] SPEAKER_04: and the butler is not a sentence, so you can't just drop that off of the atomic sentence.
+[2938.9s] SPEAKER_04: All right, so let's put it all together.
+[2941.4s] SPEAKER_04: So there's two steps in civilizing.
+[2943.1s] SPEAKER_04: First one is coming up with the civilization key, and then the next one is putting it up and figuring out everything else and getting rid of it.
+[2952.7s] SPEAKER_04: So in this case,
+[2954.9s] SPEAKER_04: This is the same sentence we're dealing with.
+[2956.6s] SPEAKER_04: We got the symbolization key there, A, B, and C for that.
+[2960.2s] SPEAKER_04: And paraphrase can be very helpful here.
+[2962.2s] SPEAKER_04: So I wanna begin to think how we can think about how this sentence is constructed in terms of being able to put the basic building blocks in the form of the atomic sentences.
+[2972.7s] SPEAKER_04: And I would get something like this.
+[2974.2s] SPEAKER_04: Jupiter and Saturn are both bigger than Mars.
+[2976.2s] SPEAKER_04: Well, that means Jupiter is bigger than Mars and Saturn is bigger than Mars.
+[2981.2s] SPEAKER_04: And Jupiter is bigger than Mars, I'm representing with an A.
+[2984.2s] SPEAKER_04: And Jupiter is bigger than Mars, I'm representing with a B.
+[2987.0s] SPEAKER_04: So I'll keep this and here and recognize that's coming between the A and the B.
+[2994.9s] SPEAKER_04: And then I see this but here.
+[2997.1s] SPEAKER_04: That's coming between this part as a unit and this part as a unit.
+[3002.3s] SPEAKER_04: So I'll have that in there.
+[3004.0s] SPEAKER_04: and then recognize that Saturn is not bigger than Jupiter, is the negation of Saturn is bigger than Jupiter.
+[3010.8s] SPEAKER_04: So I'll express that in this way, and I'll get this sentence, which is much clearer in terms of its logical structure, how the parts are put together when we think about the parts in terms of atomic sentences.
+[3023.3s] SPEAKER_04: But this is one of those things that's halfway between English and logic.
+[3026.9s] SPEAKER_04: We got all these other words in here, and, but, it is not the case that.
+[3032.0s] SPEAKER_04: Those are examples of what we call or will call logical words or logical constants.
+[3037.4s] SPEAKER_04: They have a logical meaning to them.
+[3039.9s] SPEAKER_04: So we are not going to represent them with sentence letters.
+[3042.3s] SPEAKER_04: They're not sentences.
+[3043.8s] SPEAKER_04: We're going to introduce special symbols to represent those things.
+[3048.3s] SPEAKER_04: In fact, what we call them in this kind of case is they're connectives.
+[3052.0s] SPEAKER_04: A connective is a device we use to form a compound or complex or molecular sentence from atomic synthesis.
+[3061.7s] SPEAKER_04: So it's just a device you use to take two or one or more atomic sentences and form a more complex sentence on them.
+[3067.8s] SPEAKER_04: And we want to be able to figure out what the connectives are and introduce special ways to represent those or to symbolize those.
+[3075.2s] SPEAKER_04: And here's really what's at the heart of truth functional logic.
+[3079.5s] SPEAKER_04: Other than the simplest components of sentences in truth functional logic are atomic sentences.
+[3087.7s] SPEAKER_04: The next really important thing is complex sentences are built out of atomic sentences using connectives.
+[3095.6s] SPEAKER_04: And there are exactly five connectives in truth functional logic.
+[3099.8s] SPEAKER_04: No more, no less.
+[3101.4s] SPEAKER_04: And we introduce special symbols for them.
+[3103.8s] SPEAKER_04: So I'll start with the negation.
+[3106.4s] SPEAKER_04: It's the connective that's used, that most closely associated with the English expression, it is not the case that.
+[3116.0s] SPEAKER_04: So it signifies a denial or a rejection of a sentence when you stick it in front of it.
+[3123.1s] SPEAKER_04: We're gonna introduce this symbol, that line with the little dropdown at the end of it, to represent this connective.
+[3132.3s] SPEAKER_04: So when it comes in front of an atomic sentence or a sentence letter, then this expresses it is not the case with A.
+[3140.8s] SPEAKER_04: And what does A express?
+[3142.0s] SPEAKER_04: Well, you have to look at the symbolization key for that.
+[3145.6s] SPEAKER_04: Some systems use that squiggle called a tilde.
+[3149.1s] SPEAKER_04: Our system does not.
+[3151.0s] SPEAKER_04: We are going to insist, for reasons that we'll look at on Thursday, we're going to insist that we use this symbol and only this symbol for the negation.
+[3158.2s] SPEAKER_02: Even if you're on a computer and have a hard time getting that symbol?
+[3160.9s] SPEAKER_04: Even if you're on a computer and you're using a hard time doing the system.
+[3163.4s] SPEAKER_04: On the exam, you're doing it handwritten, so you can't use that excuse for me.
+[3166.8s] SPEAKER_04: What I do is I do use the tilde when I'm typing, but then I just do a global replace at the end of it.
+[3172.8s] SPEAKER_04: And it's not just being picky.
+[3175.3s] SPEAKER_04: There are reasons for this.
+[3176.2s] SPEAKER_04: We don't want two symbols that do the same thing.
+[3178.7s] SPEAKER_04: We want just one symbol that does the job.
+[3180.7s] SPEAKER_06: Yes, we're going to use this symbol.
+[3185.8s] SPEAKER_04: I'm going to call it the tilde, but we're not going to use this symbol.
+[3189.8s] SPEAKER_06: I know.
+[3192.0s] SPEAKER_04: So in those courses, you use whatever symbol they tell you is.
+[3195.4s] SPEAKER_04: In this course, you use the symbol I thought you'd use.
+[3198.7s] SPEAKER_04: This is in our system.
+[3201.1s] SPEAKER_04: There are other systems that are similar.
+[3202.7s] SPEAKER_04: In fact, they're just dialects of each other.
+[3204.0s] SPEAKER_04: Every textbook uses slightly different symbols.
+[3207.6s] SPEAKER_04: Some just use a straight line, a dash.
+[3209.9s] SPEAKER_04: In Polish notation, they use a capital letter N with a dash.
+[3212.8s] SPEAKER_04: There are infinite, not infinite, but a higher number of different systems that all do the same thing.
+[3217.4s] SPEAKER_02: We have to often want to stick with it.
+[3219.1s] SPEAKER_02: So the negation represents it's not the case then and never just not.
+[3223.9s] SPEAKER_04: Sometimes in the colloquial English expression, it'll be a not.
+[3227.8s] SPEAKER_04: In fact, we're gonna start doing it more like that.
+[3231.1s] SPEAKER_04: But if you want the whole winded thing, it is not the case that it's said to be canonical or standard for this.
+[3237.3s] SPEAKER_04: Now, this whole thing is called a negation.
+[3239.5s] SPEAKER_04: This is the negation symbol, and so this is a negation.
+[3243.1s] SPEAKER_04: In particular, it's the negation of an atomic sentence in this case.
+[3246.8s] SPEAKER_04: It's saying of that atomic sentence that it's not the case.
+[3250.2s] SPEAKER_04: And it is what is called a unary connective.
+[3255.4s] SPEAKER_04: A connective is a unary one when it operates on a single sentence to form a more complex one.
+[3262.7s] SPEAKER_04: And it's the only unary connective in our system.
+[3265.8s] SPEAKER_04: Every other connective is a binary connective.
+[3268.4s] SPEAKER_04: And a binary connective takes two sentences and combines them into the complex sentence.
+[3274.9s] SPEAKER_04: So let's look at the binary connectives.
+[3278.1s] SPEAKER_04: The one, the conjunction, is going to be used to capture the intuitive sense of the English both at.
+[3287.5s] SPEAKER_04: And this is the symbol we're gonna use for it.
+[3289.7s] SPEAKER_04: It looks like a little hat.
+[3293.0s] SPEAKER_04: And it's sometimes called a carrot.
+[3294.4s] SPEAKER_04: Well, it's in fact what I'm gonna call it.
+[3297.3s] SPEAKER_04: Many textbooks use the appersand.
+[3299.7s] SPEAKER_04: That's the same as the squiggle.
+[3302.2s] SPEAKER_04: We just have to opt for one.
+[3303.4s] SPEAKER_04: We don't wanna have lots of different symbols, because then we're gonna introduce ambiguity.
+[3307.8s] SPEAKER_04: Oh, I don't remember what that symbol means.
+[3309.6s] SPEAKER_04: We have to have just one all the way through.
+[3311.7s] SPEAKER_04: We're gonna start thinking like a machine.
+[3313.2s] SPEAKER_04: You don't wanna, like when you're programming your machine, the smallest number of symbols possible.
+[3318.0s] SPEAKER_04: This whole thing is called a conjunction, so we can form a conjunction between A and B by putting the carrot in between them.
+[3325.1s] SPEAKER_04: Sometimes we need to talk about the parts of the conjunction.
+[3328.3s] SPEAKER_04: We will call the A the left conjunct, and we'll call the B the right conjunct.
+[3338.2s] SPEAKER_04: The disjunction is the connective used to capture or most closely associated with the English or.
+[3347.2s] SPEAKER_04: And we're going to use this symbol, which I'm going to call the VEL, sometimes called the V. It does look like a lower case V. You can use the lower case V for this.
+[3356.9s] SPEAKER_04: That would be fine.
+[3359.9s] SPEAKER_04: And so it comes between, so this would be a disjunction.
+[3362.9s] SPEAKER_04: A, VEL, V. We call the A the left disjunct and the B the right disjunct.
+[3372.2s] SPEAKER_04: Now, we've got to be careful.
+[3373.1s] SPEAKER_04: There is no single OR in English.
+[3375.4s] SPEAKER_04: or is ambiguous in English.
+[3378.2s] SPEAKER_04: It has at least two different meanings.
+[3381.2s] SPEAKER_04: One is called the exclusive meaning.
+[3384.9s] SPEAKER_04: So the exclusive or says one or the other, but not both.
+[3390.1s] SPEAKER_04: It excludes the possibility that both might be the case.
+[3394.0s] SPEAKER_04: On the other hand, the inclusive or says one or the other, and perhaps both.
+[3401.1s] SPEAKER_04: It allows for the possibility that both are the case.
+[3404.5s] SPEAKER_04: So we could introduce two different symbols into our system, that one represent the exclusive or, the other one represent the inclusive or, but for reasons that we'll see, we don't need to do that.
+[3416.1s] SPEAKER_04: We only need one or, but we have to make a decision about whether it's going to be the inclusive or or the exclusive or, and who remembers what the textbook says.
+[3429.1s] SPEAKER_04: Always the inclusive or.
+[3430.9s] SPEAKER_04: Always, always, always, always, always.
+[3434.3s] SPEAKER_04: If you ever want to express the exclusive or, you're going to have to do that in a more complex way.
+[3439.7s] SPEAKER_04: Third binary connected is the conditional.
+[3445.0s] SPEAKER_04: Captures the English if-then.
+[3446.7s] SPEAKER_04: Huge problem in philosophy and language.
+[3451.6s] SPEAKER_04: There is no single if-then in English.
+[3455.3s] SPEAKER_04: Last count, about 16 have been identified.
+[3458.6s] SPEAKER_04: So it gets really, really hard.
+[3460.4s] SPEAKER_04: We don't want to introduce a new symbol for each one of them.
+[3463.5s] SPEAKER_04: It turns out only one of them, there's kind of one in common to all of the rest of them, and that's the one we're gonna capture.
+[3469.4s] SPEAKER_04: That's the one that captures the logical sense, and we'll define that rigorously later.
+[3474.8s] SPEAKER_04: So we gotta be a bit careful here, how we think about if-thens.
+[3479.3s] SPEAKER_04: But this is the symbol we're gonna use to represent it, the arrow.
+[3483.4s] SPEAKER_04: So it's gonna come between.
+[3484.5s] SPEAKER_04: This would be read as if A, then B.
+[3488.7s] SPEAKER_04: Some textbooks use this thing called a horseshoe.
+[3492.3s] SPEAKER_04: For every system, there's an alternate symbol.
+[3494.9s] SPEAKER_04: We just have to go with the ones we get.
+[3498.7s] SPEAKER_04: Now, in this case, because the order makes a big difference, the order with conjunctions don't matter.
+[3505.1s] SPEAKER_04: Like A and B, B and A, not much difference.
+[3509.8s] SPEAKER_04: But there is a huge difference between an A and B and a B and an A.
+[3513.1s] SPEAKER_04: So we have to give special name to the parts.
+[3515.6s] SPEAKER_04: We call the part before the arrow the antecedent.
+[3519.7s] SPEAKER_04: of the conditional, and we call the part after the arrow the consequent of the conditional.
+[3528.0s] SPEAKER_04: So the order of the position of your antecedent and consequent makes a big difference.
+[3532.3s] SPEAKER_04: If B, then A, and if A, then B are just very, very different sentences.
+[3540.3s] SPEAKER_04: If you remember to give me a card for my birthday, you will get an A in this course.
+[3544.5s] SPEAKER_04: means something very different than if you get an A in this course, then you would have remembered to give me a card for my birthday.
+[3549.7s] SPEAKER_04: I guarantee you one is true and the other one is false, but that's a different issue.
+[3555.2s] SPEAKER_04: And finally, the biconditional, which we use the double arrow, and it captures the if and only if.
+[3560.8s] SPEAKER_04: Now you might think, well, that sounds just like two ifs put together with an and with a conjunction.
+[3566.4s] SPEAKER_04: And indeed, that's all it is.
+[3568.4s] SPEAKER_04: It's if A then B, and if B then A,
+[3573.9s] SPEAKER_04: But it's just so much easier to represent it as a double arrow B.
+[3579.3s] SPEAKER_04: And as we'll see, if an onion is a really useful connective in logic.
+[3586.3s] SPEAKER_04: You might remember it's in almost every definition is used if an onion.
+[3591.5s] SPEAKER_01: Yeah.
+[3594.2s] SPEAKER_01: I feel like so is XOR, but that's just .
+[3598.1s] SPEAKER_01: Like, it's also pretty important, but we don't have like a symbol for it.
+[3601.0s] SPEAKER_04: For which?
+[3602.9s] SPEAKER_04: We will later, we don't hear.
+[3604.4s] SPEAKER_04: But you're right, there are other ones.
+[3607.4s] SPEAKER_04: These are the five in truth-function logic.
+[3610.1s] SPEAKER_04: No more, no less.
+[3612.3s] SPEAKER_04: Everything that we can represent, we can represent using combinations of only the atomic sentences and these five connectives.
+[3619.7s] SPEAKER_04: But the trick is to figure out how to do that.
+[3621.7s] SPEAKER_04: And for that you need lots of practice.
+[3623.8s] SPEAKER_04: So I'll just quickly go back to this one.
+[3625.6s] SPEAKER_04: This is as far as we got before.
+[3627.9s] SPEAKER_04: We started introducing and recognizing the symbols for the connectives.
+[3631.9s] SPEAKER_04: a and b but it is not the case today so here i recognize that this and here oh that's just the conjunction so i'll use the character i'll keep the a and the b together as a unit this but when i think about it i know there's a difference between and and but but signifies a contrast in a way that and usually doesn't but from a logical point of
+[3660.4s] SPEAKER_04: And so I'm going to use the carrot for it.
+[3663.6s] SPEAKER_04: And then this, it is not the case that, is attaching itself just to C, and so I get that.
+[3670.1s] SPEAKER_04: And there, that's the symbolization of the sentence relative to that symbolization key.
+[3676.0s] SPEAKER_04: That tells me what the logical form of the sentence is.
+[3679.4s] SPEAKER_04: It's a conjunction.
+[3681.7s] SPEAKER_04: It's a conjunction whose left conjunct is itself a conjunction, and whose right conjunct is the negation of an atomic sentence.
+[3689.9s] SPEAKER_04: That tells me an awful lot about this sentence and what can follow from it and what it follows from.
+[3697.2s] SPEAKER_04: Now, there's a number of things to watch out for.
+[3699.7s] SPEAKER_04: I'm not going to go through this here, but the three main things are here.
+[3704.2s] SPEAKER_04: We have exactly five connectives in truth functional logic.
+[3709.4s] SPEAKER_04: They all have completely unambiguous meaning.
+[3713.3s] SPEAKER_04: The caret represents the very same thing in any sentence in which it occurs.
+[3720.0s] SPEAKER_04: always means the same thing.
+[3722.1s] SPEAKER_04: But we've already seen that there's at least two words in English that can signify the same connective.
+[3730.1s] SPEAKER_04: So that's a bit of a problem.
+[3731.3s] SPEAKER_04: So sometimes we have to recognize there may be a word that's a little bit unusual, but maybe it can be captured by one of the ones we already have.
+[3740.8s] SPEAKER_04: And that takes a little bit of work.
+[3742.2s] SPEAKER_04: And there are lots of different examples in there.
+[3745.4s] SPEAKER_04: The second issue
+[3748.2s] SPEAKER_04: is that we have exactly five connectives in truth functional logic, but there are an indefinite number of connectives in English.
+[3759.6s] SPEAKER_04: Many of them can be captured by just one connective of truth functional logic, but some can't.
+[3765.9s] SPEAKER_04: Some need to be captured by combinations of those ones, and I think that's what the knot was getting at.
+[3772.4s] SPEAKER_04: And finally, English sentences have ways of disguising or hiding what the relevant connectives are.
+[3781.2s] SPEAKER_04: I'm just going to give you a couple examples because we're getting out of time here.
+[3784.5s] SPEAKER_04: But think about these sentences.
+[3786.8s] SPEAKER_04: Paper is insoluble.
+[3790.2s] SPEAKER_04: Is that atomic or compound?
+[3794.0s] SPEAKER_01: Insoluble?
+[3796.1s] SPEAKER_01: In this case, it would be compound because insoluble is just paper is just soluble.
+[3801.7s] SPEAKER_04: So the atomic sentence is paper-insoluble.
+[3804.3s] SPEAKER_04: If we let P represent that, then the logical form of this sentence will be tilde.
+[3810.7s] SPEAKER_04: Paper is infallible.
+[3812.3s] SPEAKER_04: Atomic or compound?
+[3814.8s] SPEAKER_04: Atomic, infallible, just means it can catch fire.
+[3817.4s] SPEAKER_04: Yeah, that's the weird thing about English.
+[3819.4s] SPEAKER_04: I think a lot of you might be tempted to say, well, that's like insoluble.
+[3822.7s] SPEAKER_04: So it should be paper is flammable.
+[3824.6s] SPEAKER_04: Why not?
+[3824.9s] SPEAKER_04: It would just be flammable.
+[3825.9s] SPEAKER_04: It means it can be set on fire.
+[3828.7s] SPEAKER_04: And so that should be symbolized as this, but that's to misunderstand what inflammable means in English.
+[3836.6s] SPEAKER_04: Weird in English that flammable and inflammable mean the same thing.
+[3842.0s] SPEAKER_04: So when you're driving down the highway and a big gas truck comes by and it says contents of this thing are inflammable, it doesn't mean you're okay to drive off the road.
+[3851.1s] SPEAKER_04: In fact, don't drive off the road.
+[3852.7s] SPEAKER_04: This is going to blow up.
+[3854.0s] SPEAKER_04: Just a weird quirk about English.
+[3856.1s] SPEAKER_04: Sometimes we can bury the negation into a prefix.
+[3861.1s] SPEAKER_04: But don't get overly mechanical.
+[3862.6s] SPEAKER_04: Because sometimes it looks like when you're doing that, it doesn't.
+[3865.0s] SPEAKER_04: Sticking an un on the front of something is another way of doing that.
+[3868.4s] SPEAKER_04: But we've got to be careful.
+[3870.2s] SPEAKER_04: Is being unhappy the negation of being happy?
+[3872.8s] SPEAKER_04: Well, that's that love and hate problem all over again.
+[3874.9s] SPEAKER_04: You can be neither happy nor unhappy.
+[3876.9s] SPEAKER_04: So that's a case where it's not a negation.
+[3879.4s] SPEAKER_04: So don't get only mechanical.
+[3880.9s] SPEAKER_04: You have to think about the meanings of these things.
+[3883.6s] SPEAKER_04: Sometimes we can express a negation.
+[3885.9s] SPEAKER_04: Well, this is an interesting case.
+[3888.3s] SPEAKER_04: Here we have a question and a command.
+[3889.9s] SPEAKER_04: So you might think, well, our logic doesn't even allow these things.
+[3893.9s] SPEAKER_04: But, you know, if you say it in the right kind of steering way with the right kind of attitude, the right kind of connotation, papers made it, jeez, don't make me laugh.
+[3902.2s] SPEAKER_04: That's a case where it's pretty clear.
+[3908.7s] SPEAKER_04: So that would be it's not the case that paper is made of genius.
+[3913.4s] SPEAKER_04: And we do this a lot in English, right?
+[3915.2s] SPEAKER_04: We use body language to signify negations.
+[3918.6s] SPEAKER_04: That means I don't think so without using words.
+[3921.7s] SPEAKER_04: So if you're going to symbolize that linguistic act and it is a linguistic act, you have to do with the negation and so on and so on.
+[3929.0s] SPEAKER_04: Again, really quickly here, there's a whole bunch of different uses.
+[3934.3s] SPEAKER_04: They all express the very same thing.
+[3936.4s] SPEAKER_04: If I finish my homework, then I'll go to the movies.
+[3940.7s] SPEAKER_04: That's the same connective being used in all of those, even though they use very different words, they put the order together in different kinds of ways, that one doesn't, that's expressed in an argument.
+[3953.7s] SPEAKER_04: And I say this mainly because the textbook does go out of the way to say, do not confuse the arrow with therefore.
+[3963.3s] SPEAKER_04: And mathematicians, computer scientists routinely do this all the time.
+[3966.4s] SPEAKER_04: It drives us crazy.
+[3968.1s] SPEAKER_04: I know that many of you are tempted to read that as A implies B.
+[3971.2s] SPEAKER_04: That's not what it says in our formal language.
+[3974.8s] SPEAKER_04: A implies B expresses an argument.
+[3977.6s] SPEAKER_02: But in math, you often just write the error.
+[3979.5s] SPEAKER_04: Well, the problem with math is you tend to assume that all of your sentences are necessary truths, and we do not do that in logic.
+[3985.7s] SPEAKER_04: They're not all necessary truths.
+[3987.8s] SPEAKER_04: There is a relationship between them, but we won't be able to get to that until much later.
+[3991.3s] SPEAKER_04: So the bottom line is don't mix these things up.
+[3994.0s] SPEAKER_04: I know you're going to at the beginning, and you're not going to believe it's important, but it's hugely important, and we'll see reasons why we go along later.
+[4001.6s] SPEAKER_04: So that one, you'd have to represent it as an argument, and we haven't got to the point of symbolizing an argument yet.
+[4008.7s] SPEAKER_04: Same with negation, same with biconditionals all over the place.
+[4012.3s] SPEAKER_04: So just a few really common things.
+[4014.4s] SPEAKER_04: But, although, usually, but be careful, signify the same as the and.
+[4021.2s] SPEAKER_04: And so three different English ways that we can use the same symbol for.
+[4027.2s] SPEAKER_04: But again, not all ands are conjunctions.
+[4031.4s] SPEAKER_04: Weird.
+[4032.9s] SPEAKER_04: Unless there's a fun one, A unless B.
+[4035.3s] SPEAKER_04: There's a whole section of the textbook on this.
+[4038.4s] SPEAKER_04: How should we, what symbols should we use?
+[4040.3s] SPEAKER_04: We could introduce a new symbol.
+[4042.4s] SPEAKER_04: So now we could have five binary connectives, but then we'd have to define that.
+[4048.4s] SPEAKER_04: It's gonna make our life harder later.
+[4050.1s] SPEAKER_04: We're gonna have to define new rules of inference for it and all kinds of things.
+[4052.6s] SPEAKER_02: Can you just do if and not?
+[4055.7s] SPEAKER_04: There is a combination of if and not, but what is that combination?
+[4061.3s] SPEAKER_04: Bunch of choices.
+[4062.1s] SPEAKER_04: If A, then not B.
+[4063.5s] SPEAKER_04: If not A, then B.
+[4066.8s] SPEAKER_04: If not B, then A.
+[4069.5s] SPEAKER_04: If B, then not A.
+[4072.0s] SPEAKER_04: Which one is it?
+[4072.7s] SPEAKER_04: Because they all mean different things.
+[4075.0s] SPEAKER_04: And you can tear your hair out.
+[4076.3s] SPEAKER_04: You can try to remember.
+[4078.2s] SPEAKER_04: You can get a tattoo artist to put it on your skin.
+[4081.9s] SPEAKER_01: Yeah?
+[4087.7s] SPEAKER_04: If and only if is different than these.
+[4089.6s] SPEAKER_04: If and only if is a double arrow.
+[4092.0s] SPEAKER_04: If and only if is different than if.
+[4093.7s] SPEAKER_04: It's different than only if.
+[4097.2s] SPEAKER_04: what the textbook is going to turn out i'll tell you now this is what it's going to turn out to be but i guarantee if you try to remember that you won't what the textbook says is don't worry about it unless it's just a straightforward disjunction these are in fact logically equivalent necessarily equivalent we don't know that yet but we're going to be able to demonstrate that so the textbook just says make your life easy interpret the unless as a straightforward disjunction
+[4124.6s] SPEAKER_04: You don't have to worry about negations.
+[4126.3s] SPEAKER_04: You don't have to worry about what the antecedent is, what the consequence.
+[4130.9s] SPEAKER_04: And finally, here we have a connective in English that's very, very common.
+[4136.8s] SPEAKER_04: The neither nor.
+[4137.4s] SPEAKER_04: How are we going to interpret that?
+[4139.1s] SPEAKER_04: Well, again, we could introduce a new symbol and let that be the neither nor.
+[4144.8s] SPEAKER_04: Which actually occurs in the very last week of class, we are going to introduce what's called the shepherd stroke to catch that.
+[4148.8s] SPEAKER_04: But we're not there yet.
+[4151.5s] SPEAKER_04: So...
+[4152.6s] SPEAKER_04: Not either or.
+[4155.5s] SPEAKER_04: It's not the case that either A or B captures the neither nor.
+[4163.3s] SPEAKER_04: So there, a combination of the connectives we have can express a new connective of English.
+[4170.4s] SPEAKER_04: And we hope that we constructed our system in such a powerful way that we can guarantee every connective of English can be represented this way.
+[4179.6s] SPEAKER_04: We'll come back in the very last week of class to see if we can make good on this.
+[4183.6s] SPEAKER_04: But that's the hope.
+[4184.4s] SPEAKER_04: We hope that the five connectives we have can do everything we want.
+[4190.0s] SPEAKER_04: Is that the same thing as this?
+[4193.5s] SPEAKER_04: Not A or not B?
+[4196.1s] SPEAKER_04: No.
+[4196.8s] SPEAKER_04: No.
+[4197.4s] SPEAKER_04: These are very, very different things.
+[4200.6s] SPEAKER_04: So do not confuse those.
+[4203.6s] SPEAKER_04: It does turn out, however, that the neither nor can also be expressed in this way as a conjunction of negations.
+[4212.0s] SPEAKER_04: And they do turn out to be equivalent.
+[4214.5s] SPEAKER_04: They might know who's the first person to demonstrate conclusively that these are equivalent.
+[4220.6s] SPEAKER_04: followed by the name of DeMorgan's.
+[4221.9s] SPEAKER_04: So they tend to be part of DeMorgan's laws.
+[4224.7s] SPEAKER_04: And I think all of you in computer science have run across DeMorgan's laws at some point or another.
+[4228.4s] SPEAKER_04: And we'll be coming back to those.
+[4229.8s] SPEAKER_04: But we don't have to take DeMorgan's word for it.
+[4231.4s] SPEAKER_04: We're going to be able to show that these things are equivalent.
+[4235.1s] SPEAKER_04: So there's kind of the idea.
+[4236.1s] SPEAKER_04: You might have an unfamiliar expression in English, connected to English.
+[4239.4s] SPEAKER_04: You've got to find a way of representing it using just the five you have.
+[4243.1s] SPEAKER_04: And that takes a fair amount of work.
+[4245.1s] SPEAKER_04: So all we have very, very, very quickly here, go through a couple of examples and then we'll come back to this next class.
+[4252.0s] SPEAKER_04: Symbolization keys, connectives, let's put them all together to get some symbolizations.
+[4257.4s] SPEAKER_04: So here, I wanna symbolize these three.
+[4259.4s] SPEAKER_04: The first step is to form a symbolization key and I'm gonna keep adding to it as I go along.
+[4264.9s] SPEAKER_04: So I should recognize that I got two connectives here, Art Watts General Hospital,
+[4273.2s] SPEAKER_04: I'm a trained professional.
+[4274.3s] SPEAKER_04: I can get away with abbreviations.
+[4275.8s] SPEAKER_04: You guys be careful when you do that because you may introduce ambiguity.
+[4281.2s] SPEAKER_04: Betsy Watch General Hospital.
+[4285.1s] SPEAKER_04: I'll let that be A. I'll let this be B.
+[4288.1s] SPEAKER_04: Both Art and Betsy Watch General Hospital.
+[4290.8s] SPEAKER_04: Well, that's Art Watch General Hospital and Betsy Watch General Hospital.
+[4295.1s] SPEAKER_04: Easy peasy.
+[4297.3s] SPEAKER_04: Either Art or Betsy didn't watch General Hospital.
+[4301.3s] SPEAKER_04: How many...
+[4302.3s] SPEAKER_04: atomic sentences in there.
+[4305.3s] SPEAKER_04: How many connectives are in there?
+[4309.4s] SPEAKER_04: If you see one, two, that's it?
+[4312.0s] SPEAKER_04: No.
+[4313.0s] SPEAKER_04: Just paraphrase the sentence.
+[4315.1s] SPEAKER_04: The main connective is the or.
+[4317.0s] SPEAKER_04: Either Art didn't watch General Hospital or Betsy didn't watch General Hospital.
+[4324.8s] SPEAKER_04: So there's actually two negations in there.
+[4327.1s] SPEAKER_04: Either it's not the case that Art watched General Hospital
+[4330.0s] SPEAKER_04: or it's not the case that Betsy was general hospital.
+[4333.3s] SPEAKER_02: Does that mean that not A or not B is just the exclusive or?
+[4338.7s] SPEAKER_02: Well, or is inclusive, always among us.
+[4341.5s] SPEAKER_04: So this allows for the possibility of both.
+[4343.7s] SPEAKER_04: It doesn't demand it, but it allows for it.
+[4347.2s] SPEAKER_04: If Art didn't watch general hospital and Betsy was pleased, here I'd have to add on to this.
+[4351.3s] SPEAKER_04: Betsy was pleased.
+[4357.6s] SPEAKER_04: Say P for that.
+[4359.2s] SPEAKER_04: So then if it's not the case that Art watched Journal Hospital, then it is the case that Betsy was pleased.
+[4368.6s] SPEAKER_04: These are logical forms.
+[4369.5s] SPEAKER_04: These are things that are much easier to keep in your head in terms of what they follow from, what follows from them, necessary truths, necessary falsehoods, all those kinds of things.
+[4378.9s] SPEAKER_04: If Betsy watched Journal Hospital, either she flunked her exam or a miracle occurred.
+[4383.0s] SPEAKER_04: We'd have to add two things to our symbolization key.
+[4386.9s] SPEAKER_04: Betsy flunked her chemistry exam
+[4392.8s] SPEAKER_04: So be really careful with dot, dot, dots, because they hugely introduce Andy.
+[4396.7s] SPEAKER_04: I'm just looking at the clock here.
+[4398.1s] SPEAKER_04: Dot, dot, dot.
+[4400.0s] SPEAKER_04: And a miracle occurred.
+[4401.8s] SPEAKER_04: So let's let that be F. A miracle occurred.
+[4409.4s] SPEAKER_04: So if Betsy watched your own hospital, then either she flunked her chemistry exam or a miracle occurred.
+[4421.0s] SPEAKER_04: And finally, Betsy flunked her chemistry exam if and only if she watched General Hospital and no miracle occurred.
+[4427.1s] SPEAKER_04: Betsy flunked her chemistry exam, nope, that's Betsy watched General Hospital.
+[4431.5s] SPEAKER_04: If and only if she watched General Hospital and it's not the case, then miracle occurred.
+[4438.8s] SPEAKER_04: You were using before Betsy watched General Hospital, I think?
+[4442.9s] SPEAKER_04: Yeah.
+[4443.1s] SPEAKER_04: No, but this is Betsy flunked her chemistry exam, which is that one there.
+[4447.0s] SPEAKER_04: Right, that shouldn't be there.
+[4448.9s] SPEAKER_04: So you can see there's a learning curve here.
+[4451.2s] SPEAKER_04: The more of these you do, you start off relatively simple in the practice guide, and then get builder.
+[4457.3s] SPEAKER_04: Higher and harder, they can get pretty complex pretty quick.
+[4459.7s] SPEAKER_04: But you've got to get to the point where you can do some fairly complex ones by the time to get to the exam.
+[4464.1s] SPEAKER_04: I've got three minutes to go.
+[4465.3s] SPEAKER_04: This is the last thing we'll do.
+[4467.0s] SPEAKER_04: I wanted to see how many of these you can do in time.
+[4479.0s] SPEAKER_04: So like I said, on Thursday, we'll pick up, do kind of up the end for a little bit, increase the level of difficulty.
+[4498.8s] SPEAKER_04: the better you'll do on the exam.
+[4501.0s] SPEAKER_04: I'm not gonna throw at you stupidly hard ones on the exam, but they're ones that if you take you a long time to work out the answer, that's eating up the time that you need to be spending on the devices.
+[4511.5s] SPEAKER_04: And secondly, these turn out to be relatively simple compared to symbolizations in first order logic, but the better you are doing symbolization and truth functional logic will make it easier to do symbolizations in first order logic.
+[4540.0s] SPEAKER_04: For these ones, use the squeal.
+[4543.8s] SPEAKER_04: But it will be important when we look at the formal syntax.
+[4548.5s] SPEAKER_04: Why we only want one symbol rather than another symbol.
+[4583.3s] SPEAKER_04: So this is the last thing we'll do today.
+[4584.9s] SPEAKER_04: So if you're done or it gets 20 after and you have to tell it off, just hand it in.
+[4591.9s] SPEAKER_04: I will be posting solutions sometime tomorrow.
+[4615.9s] SPEAKER_01: What symbol is a better one?
+[4617.4s] SPEAKER_04: I think it's F. I think it's J for gender.
+[4622.4s] SPEAKER_04: It doesn't matter.
+[4623.2s] SPEAKER_04: You pick whatever one you think it is and just be consistent and use that.
+[4630.4s] SPEAKER_04: I think it's just I italicize that because I want to indicate it's what I'm asking.
+[4636.0s] SPEAKER_04: And it's just the font that I picked.
+[4637.3s] SPEAKER_04: That's what it made it for.
+[4638.7s] SPEAKER_04: Let's see where it's J.

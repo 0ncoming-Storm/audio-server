@@ -5,3 +5,4 @@ temp_*
 *.wav
 models
 llama.cpp
+saved-transcripts
