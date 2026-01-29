@@ -13,7 +13,6 @@ from textual.widgets import (
     Header,
     Footer,
     Button,
-    Static,
     Label,
     Select,
     Input,
@@ -180,6 +179,14 @@ class TranscriptionApp(App):
         height: auto;
     }
 
+    .section-audio-box {
+        background: $surface;
+        border: tall $background;
+        margin: 1 1 0 1;
+        padding: 1;
+        height: 50%;
+    }
+
     .section-title {
         color: $accent;
         text-style: bold;
@@ -286,7 +293,7 @@ class TranscriptionApp(App):
                 yield Input(value="http://localhost:8000/process-audio", id="url-input")
 
             # 2. Input Logic Section
-            with Vertical(classes="section"):
+            with Vertical(classes="section-audio-box"):
                 yield Label("AUDIO SOURCE", classes="section-title")
                 yield Select(
                     options=[("Microphone", "mic"), ("Local File Upload", "file")],
